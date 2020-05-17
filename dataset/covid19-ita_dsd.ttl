@@ -1,0 +1,139 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix sdmx-subjects: <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix kpi: <http://w3id.org/kpionto/> . 
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix om:  <http://www.openmath.org/cd/arith1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cov: <http://kdmg.dii.univpm.it/datasets/covid19italy/> .
+
+
+#Dataset
+
+cov:covid19Italy a qb:DataSet;
+  rdfs:label "COVID-19 Italy";
+  dct:title "COVID-19 Italy";
+  rdfs:comment "Dataset on Italian COVID-19 cases following the RDF Datacube vocabulary. Data provided by the Department of Civil Protection."@en;
+  rdfs:comment "Dataset in formato RDF Datacube dei casi di COVID-19 in Italia. I dati sono forniti da Dipartimento di Protezione Civile."@it;
+  dct:source <https://github.com/pcm-dpc/COVID-19>;
+  dct:contributor "Emanuele Storti", "Domenico Potena", "Claudia Diamantini";
+  dct:publisher <http://kdmg.dii.univpm.it>;
+  dct:license <https://creativecommons.org/licenses/by/4.0/>;
+  dct:issued "2020-05-17"^^xsd:date;
+  dct:subject sdmx-subjects:1.4;
+  qb:structure cov:dsd.
+  
+
+# DataStructureDefinition
+
+cov:dsd a qb:DataStructureDefinition ;
+  rdfs:label "DSD for the COVID-19 Italy dataset"@en ;
+  qb:component 	[qb:dimension cov:refPeriod];
+  qb:component 	[qb:dimension cov:refArea];
+  qb:component  [qb:measure cov:Total_Hospitalized_With_Sympthoms];
+  qb:component  [qb:measure cov:Total_Intensive_Care];
+  qb:component  [qb:measure cov:Total_Hospitalized];
+  qb:component  [qb:measure cov:Total_Home_Isolation];
+  qb:component  [qb:measure cov:Total_Active_Cases];
+  qb:component  [qb:measure cov:Variation_Total_Active_Cases];
+  qb:component  [qb:measure cov:New_Cases];
+  qb:component  [qb:measure cov:Total_Recovered];
+  qb:component  [qb:measure cov:Total_Deaths];
+  qb:component  [qb:measure cov:Total_Cases];
+  qb:component  [qb:measure cov:Total_Tests];
+  qb:component  [qb:measure cov:Total_Cases_Tested];
+  qb:component  [qb:attribute cov:Note].
+
+cov:Total_Hospitalized_With_Sympthoms a kpi:Indicator;
+ rdfs:label "Total hospitalized with sympthoms";
+ rdfs:comment "Current total number of cases hospitalized with sympthoms on the reference time".
+
+cov:Total_Intensive_Care a kpi:Indicator;
+ rdfs:label "Total intensive care";
+ rdfs:comment "Current total number of cases hospitalized requiring intensive care on the reference time".
+
+cov:Total_Hospitalized a kpi:Indicator;
+ rdfs:label "Total hospitalized";
+ rdfs:comment "Current total number of cases hospitalized on the reference time";
+ kpi:hasFormula [
+		kpi:hasFunction om:plus;
+                kpi:hasArgument
+			[kpi:hasArgumentPosition 1;
+			 kpi:hasArgumentName "addend";
+			 kpi:hasArgumentValue cov:Total_Hospitalized_With_Sympthoms];
+                kpi:hasArgument
+			[kpi:hasArgumentPosition 2;
+			 kpi:hasArgumentName "addend";
+			 kpi:hasArgumentValue cov:Total_Intensive_Care]
+		].
+
+cov:Total_Home_Isolation a kpi:Indicator;
+ rdfs:label "Total home isolation";
+ rdfs:comment "Current total number of cases in home isolation on the reference time".
+
+cov:Total_Active_Cases a kpi:Indicator;
+ rdfs:label "Total active cases";
+ rdfs:comment "Current total number of positive cases on the reference time";
+  kpi:hasFormula [
+		kpi:hasFunction om:plus;
+                kpi:hasArgument
+			[kpi:hasArgumentPosition 1;
+			 kpi:hasArgumentName "addend";
+			 kpi:hasArgumentValue cov:Total_Hospitalized];
+                kpi:hasArgument
+			[kpi:hasArgumentPosition 2;
+			 kpi:hasArgumentName "addend";
+			 kpi:hasArgumentValue cov:Total_Home_Isolation]
+		].
+
+cov:Variation_Total_Active_Cases a kpi:Indicator;
+ rdfs:label "Variation total active cases";
+ rdfs:comment "Variation of the current number of total positive cases with respect to the previous measurement".
+
+cov:New_Cases a kpi:Indicator;
+ rdfs:label "New cases";
+ rdfs:comment "Number of new cases".
+
+cov:Total_Recovered a kpi:Indicator;
+ rdfs:label "Total recovered";
+ rdfs:comment "Current total number of recovered cases on the reference time".
+
+cov:Total_Deaths a kpi:Indicator;
+ rdfs:label "Total deaths";
+ rdfs:comment "Current total number of deaths on the reference time".
+
+cov:Total_Cases a kpi:Indicator;
+ rdfs:label "Total cases";
+ rdfs:comment "Current total number of cases on the reference time";
+  kpi:hasFormula [
+		kpi:hasFunction om:plus;
+                kpi:hasArgument
+			[kpi:hasArgumentPosition 1;
+			 kpi:hasArgumentName "addend";
+			 kpi:hasArgumentValue cov:Total_Active_Cases];
+                kpi:hasArgument
+			[kpi:hasArgumentPosition 2;
+			 kpi:hasArgumentName "addend";
+			 kpi:hasArgumentValue [
+				kpi:hasFunction om:plus;
+                		kpi:hasArgument
+					[kpi:hasArgumentPosition 1;
+					 kpi:hasArgumentName "addend";
+					 kpi:hasArgumentValue cov:Total_Recovered],
+					[kpi:hasArgumentPosition 2;
+					 kpi:hasArgumentName "addend";
+					 kpi:hasArgumentValue cov:Total_Deaths]
+			        ]
+                       ]
+  ]. 
+
+
+cov:Total_Tests a kpi:Indicator;
+ rdfs:label "Total tests";
+ rdfs:comment "Current total number of tests on the reference time".
+
+cov:Total_Cases_Tested a kpi:Indicator;
+ rdfs:label "Total number of cases tested";
+ rdfs:comment "Current total number of cases tested on the reference time".
