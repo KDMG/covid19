@@ -14,10 +14,10 @@ In this project, we translate the dataset produced by the Department of Civil Pr
 Our dataset relies on the [RDF Data Cube Vocabulary](https://www.w3.org/TR/vocab-data-cube/), which allows to describe statistical multidimensional data as Linked Data on the Web. As such, each data point is represented as an observations of the relevant measures along two dimensions, namely time and geographical area. 
 The [`/dataset`](/dataset) folder includes:
 
-* [`covid19-ita_dsd.ttl`](/dataset/covid19-ita_dsd.ttl): the Data Structure Definition of the dataset. Here, dataset metadata are provided together with definition of dimensions, measures and attributes. By extending the RDF Data Cube vocabulary, our representation of measures include also their explicit mathematical meaning, namely their calculation formula, according to the [http://w3id.org/kpionto](KPIOnto vocabulary).
+* [`covid19-ita_dsd.ttl`](/dataset/covid19-ita_dsd.ttl): the Data Structure Definition of the dataset. Here, dataset metadata are provided together with definition of dimensions, measures and attributes. By extending the RDF Data Cube vocabulary, our representation of measures include also their explicit mathematical meaning, namely their calculation formula, according to the [KPIOnto vocabulary](http://w3id.org/kpionto).
 * [`covid19-ita-regioni_sample.ttl`](/dataset/covid19-ita-regioni_sample.ttl): a sample of the regional dataset. Observations are organized according to the Data Structure Definition. 
 
-As an example, the following observation describes the measurement taken in the Marche region on 1 May 2020.
+As an example, the following observation describes the measurements taken in the Marche region on 1 May 2020.
 
 ```
   cov:obs1417 a qb:Observation ;
