@@ -19,6 +19,7 @@ The [`/dataset`](/dataset) folder includes:
 
 As an example, the following observation describes the measurement taken in the Marche region on 1 May 2020.
 
+```
   cov:obs1417 a qb:Observation ;
     cov:New_Cases 28 ;
     cov:Total_Active_Cases 3211 ;
@@ -35,6 +36,7 @@ As an example, the following observation describes the measurement taken in the 
     cov:refArea dbr:Marche ;
     cov:refTime "2020-05-01T17:00:00"^^xsd:dateTime ;
     qb:dataSet cov:covid19Italy .
+```
 
 RDF serialization is provided in [Turtle syntax](https://www.w3.org/TR/turtle/). 
 The full dataset for regions and the dataset for provinces will be uploaded soon.
