@@ -5,8 +5,8 @@ This repository includes a Linked Data representation of the [covid19-ita datase
 
 Italy has been one of the countries most affected by the new coronavirus outbreak, both in terms of number of positive cases and economically. Starting from February 24th, 2020 the Department of Civil Protection in Italy has been publishing measurements of various indicators related to COVID19 spread at province, regional and country levels. The datasets are in CSV format and are updated on a daily basis. 
 
-Giving data explicit semantic helps to better understand them, improve their access through web-scale queries, their reuse and, ultimately, increase their value. 
-In this project, we translate the dataset produced by the Department of Civil Protection into Linked Data, with the purpose  to obtain a greater opennes, facilitating data discovery and by linking the dataset to other data sources. 
+Making data semantics explicit helps to better understand them, improve their access through web-scale queries, their reuse and, ultimately, increase their value. 
+In this project, we translate the dataset produced by the Department of Civil Protection into Linked Data, with the purpose  to obtain a greater opennes, facilitating data discovery by linking the dataset to other data sources. 
 
 ![graph example](/resources/graph.png)
 
