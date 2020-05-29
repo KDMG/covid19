@@ -1,0 +1,409 @@
+@prefix cov: <http://kdmg.dii.univpm.it/datasets/covid19italy/> .
+@prefix covt: <http://kdmg.dii.univpm.it/datasets/covid19italy/terms/> .
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cov:dc-0001 a covt:DataCorrectionNote ;
+    covt:noticeDescription "recalculation of informations"^^xsd:string ;
+    covt:otherInformation "recalculation recovered (-110 compared to yesterday)"^^xsd:string ;
+    covt:refArea dbr:South_Tyrol ;
+    covt:refTime "2020-04-12T17:00:00"^^xsd:dateTime .
+
+cov:dc-0002 a covt:DataCorrectionNote ;
+    covt:noticeDescription "recalculation of informations"^^xsd:string ;
+    covt:otherInformation "recalculation of recovered (-110 compared to yesterday)"^^xsd:string ;
+    covt:refArea dbr:South_Tyrol ;
+    covt:refTime "2020-04-12T17:00:00"^^xsd:dateTime .
+
+cov:dc-0003 a covt:DataCorrectionNote ;
+    covt:noticeDescription "recalculation of informations"^^xsd:string ;
+    covt:otherInformation "recalculation of recovered (-110 compared to yesterday)"^^xsd:string ;
+    covt:refArea dbr:South_Tyrol ;
+    covt:refTime "2020-04-12T17:00:00"^^xsd:dateTime .
+
+cov:dc-0004 a covt:DataCorrectionNote ;
+    covt:noticeDescription "recalculation of informations"^^xsd:string ;
+    covt:otherInformation "recalculation of home isolation and recovered"^^xsd:string ;
+    covt:refArea dbr:Friuli-Venezia_Giulia ;
+    covt:refTime "2020-04-15T17:00:00"^^xsd:dateTime .
+
+cov:dc-0005 a covt:DataCorrectionNote ;
+    covt:noticeDescription "recalculation of informations"^^xsd:string ;
+    covt:otherInformation "recalculation of home isolation and recovered"^^xsd:string ;
+    covt:refArea dbr:Friuli-Venezia_Giulia ;
+    covt:refTime "2020-04-15T17:00:00"^^xsd:dateTime .
+
+cov:dc-0006 a covt:DataCorrectionNote ;
+    covt:noticeDescription "recalculation of informations"^^xsd:string ;
+    covt:otherInformation "recalculation of tested cases (duplicates removed)"^^xsd:string ;
+    covt:refArea dbr:Lombardy ;
+    covt:refTime "2020-04-20T17:00:00"^^xsd:dateTime .
+
+cov:dc-0007 a covt:DataCorrectionNote ;
+    covt:noticeDescription "recalculation of informations"^^xsd:string ;
+    covt:otherInformation "recalculation of tested cases (duplicates removed)"^^xsd:string ;
+    covt:refArea dbr:Lombardy ;
+    covt:refTime "2020-04-20T17:00:00"^^xsd:dateTime .
+
+cov:dc-0008 a covt:DataCorrectionNote ;
+    covt:noticeDescription "information analysis"^^xsd:string ;
+    covt:otherInformation " information analysis (recovered under revision)"^^xsd:string ;
+    covt:refArea dbr:Friuli-Venezia_Giulia ;
+    covt:refTime "2020-04-24T17:00:00"^^xsd:dateTime .
+
+cov:dc-0009 a covt:DataCorrectionNote ;
+    covt:noticeDescription "information analysis"^^xsd:string ;
+    covt:otherInformation " information analysis (recovered under revision)"^^xsd:string ;
+    covt:refArea dbr:Friuli-Venezia_Giulia ;
+    covt:refTime "2020-04-24T17:00:00"^^xsd:dateTime .
+
+cov:dc-0010 a covt:DataCorrectionNote ;
+    covt:noticeDescription "ricalcolo delle informazioni"^^xsd:string ;
+    covt:otherInformation "ricalcolo casi testati (1.237 tamponi aggiunti)"^^xsd:string ;
+    covt:refArea dbr:Sardinia ;
+    covt:refTime "2020-04-24T17:00:00"^^xsd:dateTime .
+
+cov:dc-0011 a covt:DataCorrectionNote ;
+    covt:noticeDescription "recalculation of informations"^^xsd:string ;
+    covt:otherInformation "recalculation of tests (1.237 tests added)"^^xsd:string ;
+    covt:refArea dbr:Sardinia ;
+    covt:refTime "2020-04-24T17:00:00"^^xsd:dateTime .
+
+cov:dc-0012 a covt:DataCorrectionNote ;
+    covt:noticeDescription "recalculation of informations"^^xsd:string ;
+    covt:otherInformation "recalculation of tested cases"^^xsd:string ;
+    covt:refArea dbr:Aosta_Valley ;
+    covt:refTime "2020-04-26T17:00:00"^^xsd:dateTime .
+
+cov:dc-0013 a covt:DataCorrectionNote ;
+    covt:noticeDescription "recalculation of informations"^^xsd:string ;
+    covt:otherInformation "recalculation of tested cases"^^xsd:string ;
+    covt:refArea dbr:Aosta_Valley ;
+    covt:refTime "2020-04-26T17:00:00"^^xsd:dateTime .
+
+cov:dc-0014 a covt:DataCorrectionNote ;
+    covt:noticeDescription "recalculation of information"^^xsd:string ;
+    covt:otherInformation "recalculation of 41 deaths (8 in the last 48 hours and 33 during April)"^^xsd:string ;
+    covt:refArea dbr:Lazio ;
+    covt:refTime "2020-05-01T17:00:00"^^xsd:dateTime .
+
+cov:dc-0015 a covt:DataCorrectionNote ;
+    covt:noticeDescription "recalculation of information"^^xsd:string ;
+    covt:otherInformation "recalculation of 41 deaths (8 in the last 48 hours and 33 during April)"^^xsd:string ;
+    covt:refArea dbr:Lazio ;
+    covt:refTime "2020-05-01T17:00:00"^^xsd:dateTime .
+
+cov:dc-0016 a covt:DataCorrectionNote ;
+    covt:noticeDescription "recalculation of information"^^xsd:string ;
+    covt:otherInformation "recalculation of 329 deaths (47 today and 282 during April)"^^xsd:string ;
+    covt:refArea dbr:Lombardy ;
+    covt:refTime "2020-05-02T17:00:00"^^xsd:dateTime .
+
+cov:dc-0017 a covt:DataCorrectionNote ;
+    covt:noticeDescription "recalculation of information"^^xsd:string ;
+    covt:otherInformation "recalculation of 329 deaths (47 today and 282 during April)"^^xsd:string ;
+    covt:refArea dbr:Lombardy ;
+    covt:refTime "2020-05-02T17:00:00"^^xsd:dateTime .
+
+cov:dc-0018 a covt:DataCorrectionNote ;
+    covt:noticeDescription "recalculation of information"^^xsd:string ;
+    covt:otherInformation "recalculation of new positives and recovered"^^xsd:string ;
+    covt:refArea dbr:Sardinia ;
+    covt:refTime "2020-05-04T17:00:00"^^xsd:dateTime .
+
+cov:dc-0019 a covt:DataCorrectionNote ;
+    covt:noticeDescription "recalculation of information"^^xsd:string ;
+    covt:otherInformation "recalculation of new positives and recovered"^^xsd:string ;
+    covt:refArea dbr:Sardinia ;
+    covt:refTime "2020-05-04T17:00:00"^^xsd:dateTime .
+
+cov:dc-0020 a covt:DataCorrectionNote ;
+    covt:noticeDescription "recalculation of information"^^xsd:string ;
+    covt:otherInformation "update of recovered people (increase)"^^xsd:string ;
+    covt:refArea dbr:Lombardy ;
+    covt:refTime "2020-05-06T17:00:00"^^xsd:dateTime .
+
+cov:dc-0021 a covt:DataCorrectionNote ;
+    covt:noticeDescription "recalculation of information"^^xsd:string ;
+    covt:otherInformation "update of recovered people (increase)"^^xsd:string ;
+    covt:refArea dbr:Lombardy ;
+    covt:refTime "2020-05-06T17:00:00"^^xsd:dateTime .
+
+cov:dc-0022 a covt:DataCorrectionNote ;
+    covt:noticeDescription "recalculation of information"^^xsd:string ;
+    covt:otherInformation "recalculation of positives (decrease)"^^xsd:string ;
+    covt:refArea dbr:Basilicata ;
+    covt:refTime "2020-05-07T17:00:00"^^xsd:dateTime .
+
+cov:dc-0023 a covt:DataCorrectionNote ;
+    covt:noticeDescription "recalculation of information"^^xsd:string ;
+    covt:otherInformation "recalculation of positives (decrease)"^^xsd:string ;
+    covt:refArea dbr:Basilicata ;
+    covt:refTime "2020-05-07T17:00:00"^^xsd:dateTime .
+
+cov:dc-0024 a covt:DataCorrectionNote ;
+    covt:noticeDescription "recalculation of information"^^xsd:string ;
+    covt:otherInformation "recalculation of positives (decrease)"^^xsd:string ;
+    covt:refArea dbr:Basilicata ;
+    covt:refTime "2020-05-07T17:00:00"^^xsd:dateTime .
+
+cov:dc-0025 a covt:DataCorrectionNote ;
+    covt:noticeDescription "recalculation of information"^^xsd:string ;
+    covt:otherInformation "recalculation of positives (decrease)"^^xsd:string ;
+    covt:refArea dbr:Basilicata ;
+    covt:refTime "2020-05-07T17:00:00"^^xsd:dateTime .
+
+cov:dc-0026 a covt:DataCorrectionNote ;
+    covt:noticeDescription "recalculation of information"^^xsd:string ;
+    covt:otherInformation "add 419 positive cases diagnosed before the last 7 days"^^xsd:string ;
+    covt:refArea dbr:Lombardy ;
+    covt:refTime "2020-05-12T17:00:00"^^xsd:dateTime .
+
+cov:dc-0027 a covt:DataCorrectionNote ;
+    covt:noticeDescription "recalculation of information"^^xsd:string ;
+    covt:otherInformation "add 419 positive cases diagnosed before the last 7 days"^^xsd:string ;
+    covt:refArea dbr:Lombardy ;
+    covt:refTime "2020-05-12T17:00:00"^^xsd:dateTime .
+
+cov:dc-0028 a covt:DataCorrectionNote ;
+    covt:noticeDescription "recalculation of information"^^xsd:string ;
+    covt:otherInformation "recalculation of deceased people (+5)"^^xsd:string ;
+    covt:refArea dbr:Sardinia ;
+    covt:refTime "2020-05-14T17:00:00"^^xsd:dateTime .
+
+cov:dc-0029 a covt:DataCorrectionNote ;
+    covt:noticeDescription "recalculation of information"^^xsd:string ;
+    covt:otherInformation "recalculation of deceased people (+5)"^^xsd:string ;
+    covt:refArea dbr:Sardinia ;
+    covt:refTime "2020-05-14T17:00:00"^^xsd:dateTime .
+
+cov:dc-0030 a covt:DataCorrectionNote ;
+    covt:noticeDescription "recalculation of information"^^xsd:string ;
+    covt:otherInformation "73 new positives of which 18 relating to the last 24/48 hours and 55 recovered from reports of cases in March April and May"^^xsd:string ;
+    covt:refArea dbr:Lazio ;
+    covt:refTime "2020-05-15T17:00:00"^^xsd:dateTime .
+
+cov:dc-0031 a covt:DataCorrectionNote ;
+    covt:noticeDescription "recalculation of information"^^xsd:string ;
+    covt:otherInformation "73 new positives of which 18 relating to the last 24/48 hours and 55 recovered from reports of cases in March April and May"^^xsd:string ;
+    covt:refArea dbr:Lazio ;
+    covt:refTime "2020-05-15T17:00:00"^^xsd:dateTime .
+
+cov:dc-0032 a covt:DataCorrectionNote ;
+    covt:noticeDescription "recalculation of information"^^xsd:string ;
+    covt:otherInformation "positive cases recalculation: -8 (-7 on 17/05/2020 and -1 on 18/05/2020)"^^xsd:string ;
+    covt:refArea dbr:Marche ;
+    covt:refTime "2020-05-19T17:00:00"^^xsd:dateTime .
+
+cov:dc-0033 a covt:DataCorrectionNote ;
+    covt:noticeDescription "recalculation of information"^^xsd:string ;
+    covt:otherInformation "positive cases recalculation: -8 (-7 on 17/05/2020 and -1 on 18/05/2020)"^^xsd:string ;
+    covt:refArea dbr:Marche ;
+    covt:refTime "2020-05-19T17:00:00"^^xsd:dateTime .
+
+cov:dc-0034 a covt:DataCorrectionNote ;
+    covt:noticeDescription "recalculation of information"^^xsd:string ;
+    covt:otherInformation "recalculation of positive cases (-2 for false positives by the ASSL of Oristano and by the ASSL of Sassari)"^^xsd:string ;
+    covt:refArea dbr:Sardinia ;
+    covt:refTime "2020-05-25T17:00:00"^^xsd:dateTime .
+
+cov:dc-0035 a covt:DataCorrectionNote ;
+    covt:noticeDescription "recalculation of information"^^xsd:string ;
+    covt:otherInformation "recalculation of positive cases (-2 for false positives by the ASSL of Oristano and by the ASSL of Sassari)"^^xsd:string ;
+    covt:refArea dbr:Sardinia ;
+    covt:refTime "2020-05-25T17:00:00"^^xsd:dateTime .
+
+cov:dc-0036 a covt:DataCorrectionNote ;
+    covt:noticeDescription "recalculation of information"^^xsd:string ;
+    covt:otherInformation "recalculation of deaths (11 deaths previously reported cannot be classified as Covid-19 and are not included in the ISS database)"^^xsd:string ;
+    covt:refArea dbr:Marche ;
+    covt:refTime "2020-05-29T17:00:00"^^xsd:dateTime .
+
+cov:dc-0037 a covt:DataCorrectionNote ;
+    covt:noticeDescription "recalculation of information"^^xsd:string ;
+    covt:otherInformation "recalculation of deaths (11 deaths previously reported cannot be classified as Covid-19 and are not included in the ISS database)"^^xsd:string ;
+    covt:refArea dbr:Marche ;
+    covt:refTime "2020-05-29T17:00:00"^^xsd:dateTime .
+
+cov:nd-0005 a covt:PartialDataNote ;
+    covt:noticeDescription "partial communication of data"^^xsd:string ;
+    covt:refArea dbr:Lombardy ;
+    covt:refTime "2020-03-10T17:00:00"^^xsd:dateTime .
+
+cov:nd-0006 a covt:NoDataNote ;
+    covt:noticeDescription "no data has been sent"^^xsd:string ;
+    covt:refArea dbr:Abruzzo ;
+    covt:refTime "2020-03-11T17:00:00"^^xsd:dateTime .
+
+cov:nd-0007 a covt:NoDataNote ;
+    covt:noticeDescription "no data has been sent"^^xsd:string ;
+    covt:refArea dbr:Abruzzo ;
+    covt:refTime "2020-03-11T17:00:00"^^xsd:dateTime .
+
+cov:nd-0008 a covt:NoDataNote ;
+    covt:noticeDescription "no data has been sent"^^xsd:string ;
+    covt:refArea dbr:Trentino ;
+    covt:refTime "2020-03-16T17:00:00"^^xsd:dateTime .
+
+cov:nd-0009 a covt:NoDataNote ;
+    covt:noticeDescription "no data has been sent"^^xsd:string ;
+    covt:refArea dbr:Trentino ;
+    covt:refTime "2020-03-16T17:00:00"^^xsd:dateTime .
+
+cov:nd-0010 a covt:NoDataNote ;
+    covt:noticeDescription "no data has been sent"^^xsd:string ;
+    covt:refArea dbr:Apulia ;
+    covt:refTime "2020-03-16T17:00:00"^^xsd:dateTime .
+
+cov:nd-0011 a covt:NoDataNote ;
+    covt:noticeDescription "no data has been sent"^^xsd:string ;
+    covt:refArea dbr:Apulia ;
+    covt:refTime "2020-03-16T17:00:00"^^xsd:dateTime .
+
+cov:nd-0012 a covt:NoDataNote ;
+    covt:noticeDescription "no data has been sent"^^xsd:string ;
+    covt:refArea dbr:Rimini ;
+    covt:refTime "2020-03-17T17:00:00"^^xsd:dateTime .
+
+cov:nd-0013 a covt:NoDataNote ;
+    covt:noticeDescription "no data has been sent"^^xsd:string ;
+    covt:refArea dbr:Rimini ;
+    covt:refTime "2020-03-17T17:00:00"^^xsd:dateTime .
+
+cov:nd-0014 a covt:NoDataNote ;
+    covt:noticeDescription "no data has been sent"^^xsd:string ;
+    covt:refArea dbr:Rimini ;
+    covt:refTime "2020-03-17T17:00:00"^^xsd:dateTime .
+
+cov:nd-0015 a covt:NoDataNote ;
+    covt:noticeDescription "no data has been sent"^^xsd:string ;
+    covt:refArea dbr:Province_of_Parma ;
+    covt:refTime "2020-03-18T17:00:00"^^xsd:dateTime .
+
+cov:nd-0016 a covt:NoDataNote ;
+    covt:noticeDescription "no data has been sent"^^xsd:string ;
+    covt:refArea dbr:Province_of_Parma ;
+    covt:refTime "2020-03-18T17:00:00"^^xsd:dateTime .
+
+cov:nd-0017 a covt:NoDataNote ;
+    covt:noticeDescription "no data has been sent"^^xsd:string ;
+    covt:refArea dbr:Province_of_Parma ;
+    covt:refTime "2020-03-18T17:00:00"^^xsd:dateTime .
+
+cov:nd-0018 a covt:NoDataNote ;
+    covt:noticeDescription "no data has been sent"^^xsd:string ;
+    covt:refArea dbr:Campania ;
+    covt:refTime "2020-03-18T17:00:00"^^xsd:dateTime .
+
+cov:nd-0019 a covt:NoDataNote ;
+    covt:noticeDescription "no data has been sent"^^xsd:string ;
+    covt:refArea dbr:Campania ;
+    covt:refTime "2020-03-18T17:00:00"^^xsd:dateTime .
+
+cov:pd-0001 a covt:PartialDataNote ;
+    covt:noticeDescription "partial communication of data"^^xsd:string ;
+    covt:otherInformation "300 positive cases"^^xsd:string ;
+    covt:refArea dbr:Province_of_Brescia ;
+    covt:refTime "2020-03-07T17:00:00"^^xsd:dateTime .
+
+cov:pd-0002 a covt:PartialDataNote ;
+    covt:noticeDescription "partial communication of data"^^xsd:string ;
+    covt:otherInformation "300 positive cases"^^xsd:string ;
+    covt:refArea dbr:Province_of_Brescia ;
+    covt:refTime "2020-03-07T17:00:00"^^xsd:dateTime .
+
+cov:pd-0003 a covt:PartialDataNote ;
+    covt:noticeDescription "partial communication of data"^^xsd:string ;
+    covt:otherInformation "300 positive cases"^^xsd:string ;
+    covt:refArea dbr:Province_of_Brescia ;
+    covt:refTime "2020-03-07T17:00:00"^^xsd:dateTime .
+
+cov:pd-0004 a covt:PartialDataNote ;
+    covt:noticeDescription "partial communication of data"^^xsd:string ;
+    covt:refArea dbr:Lombardy ;
+    covt:refTime "2020-03-10T17:00:00"^^xsd:dateTime .
+
+cov:pd-0006 a covt:PartialDataNote ;
+    covt:noticeDescription "partial communication of data"^^xsd:string ;
+    covt:otherInformation "-50 death - late communication"^^xsd:string ;
+    covt:refArea dbr:Piedmont ;
+    covt:refTime "2020-03-26T17:00:00"^^xsd:dateTime .
+
+cov:pd-0007 a covt:PartialDataNote ;
+    covt:noticeDescription "partial communication of data"^^xsd:string ;
+    covt:otherInformation "-50 - late communication"^^xsd:string ;
+    covt:refArea dbr:Piedmont ;
+    covt:refTime "2020-03-26T17:00:00"^^xsd:dateTime .
+
+cov:pd-0008 a covt:PartialDataNote ;
+    covt:noticeDescription "partial communication of data"^^xsd:string ;
+    covt:otherInformation "tests data not updated"^^xsd:string ;
+    covt:refArea dbr:Emilia-Romagna ;
+    covt:refTime "2020-03-29T17:00:00"^^xsd:dateTime .
+
+cov:pd-0009 a covt:PartialDataNote ;
+    covt:noticeDescription "partial communication of data"^^xsd:string ;
+    covt:otherInformation " tests data not updated"^^xsd:string ;
+    covt:refArea dbr:Emilia-Romagna ;
+    covt:refTime "2020-03-29T17:00:00"^^xsd:dateTime .
+
+cov:pd-0010 a covt:PartialDataNote ;
+    covt:noticeDescription "partial communication of data"^^xsd:string ;
+    covt:otherInformation "tests data not updated"^^xsd:string ;
+    covt:refArea dbr:Molise ;
+    covt:refTime "2020-04-10T17:00:00"^^xsd:dateTime .
+
+cov:pd-0011 a covt:PartialDataNote ;
+    covt:noticeDescription "partial communication of data"^^xsd:string ;
+    covt:otherInformation " tests data not updated"^^xsd:string ;
+    covt:refArea dbr:Molise ;
+    covt:refTime "2020-04-10T17:00:00"^^xsd:dateTime .
+
+cov:pd-0012 a covt:PartialDataNote ;
+    covt:noticeDescription "partial communication of data"^^xsd:string ;
+    covt:otherInformation "tested cases not updated"^^xsd:string ;
+    covt:refArea dbr:Lombardy ;
+    covt:refTime "2020-04-21T17:00:00"^^xsd:dateTime .
+
+cov:pd-0013 a covt:PartialDataNote ;
+    covt:noticeDescription "partial communication of data"^^xsd:string ;
+    covt:otherInformation "tested cases not updated"^^xsd:string ;
+    covt:refArea dbr:Lombardy ;
+    covt:refTime "2020-04-21T17:00:00"^^xsd:dateTime .
+
+cov:pd-0014 a covt:PartialDataNote ;
+    covt:noticeDescription "partial communication of data"^^xsd:string ;
+    covt:otherInformation "tested cases not updated"^^xsd:string ;
+    covt:refArea dbr:Campania ;
+    covt:refTime "2020-04-21T17:00:00"^^xsd:dateTime .
+
+cov:pd-0015 a covt:PartialDataNote ;
+    covt:noticeDescription "partial communication of data"^^xsd:string ;
+    covt:otherInformation "tested cases not updated"^^xsd:string ;
+    covt:refArea dbr:Campania ;
+    covt:refTime "2020-04-21T17:00:00"^^xsd:dateTime .
+
+cov:pd-0018 a covt:PartialDataNote ;
+    covt:noticeDescription "partial communication of data"^^xsd:string ;
+    covt:otherInformation "tested cases not updated"^^xsd:string ;
+    covt:refArea dbr:Trentino ;
+    covt:refTime "2020-03-07T17:00:00"^^xsd:dateTime .
+
+cov:pd-0019 a covt:PartialDataNote ;
+    covt:noticeDescription "partial communication of data"^^xsd:string ;
+    covt:otherInformation "tested cases not updated"^^xsd:string ;
+    covt:refArea dbr:Trentino ;
+    covt:refTime "2020-03-07T17:00:00"^^xsd:dateTime .
+
+cov:pd-0020 a covt:PartialDataNote ;
+    covt:noticeDescription "partial communication of data"^^xsd:string ;
+    covt:otherInformation "deceased people data not updated"^^xsd:string ;
+    covt:refArea dbr:Lombardy ;
+    covt:refTime "2020-05-24T17:00:00"^^xsd:dateTime .
+
+cov:pd-0021 a covt:PartialDataNote ;
+    covt:noticeDescription "partial communication of data"^^xsd:string ;
+    covt:otherInformation "deceased people data not updated"^^xsd:string ;
+    covt:refArea dbr:Lombardy ;
+    covt:refTime "2020-05-24T17:00:00"^^xsd:dateTime .
+

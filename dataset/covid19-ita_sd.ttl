@@ -1,0 +1,134 @@
+@prefix cov: <http://kdmg.dii.univpm.it/datasets/covid19italy/> .
+@prefix covt: <http://kdmg.dii.univpm.it/datasets/covid19italy/terms> .
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+#Definition of measures
+
+covt:Total_Hospitalised_Patients_With_Symptoms a kpi:Indicator;
+ rdfs:label "Total hospitalized patients with symptoms";
+ rdfs:comment "Current total number of cases hospitalized with symptoms on the reference time".
+
+covt:Total_Intensive_Care a kpi:Indicator;
+ rdfs:label "Total intensive care";
+ rdfs:comment "Current total number of cases hospitalized requiring intensive care on the reference time".
+
+covt:Total_Hospitalised_Patients a kpi:Indicator;
+ rdfs:label "Total hospitalised patiens";
+ rdfs:comment "Current total number of positive patients hospitalised on the reference time";
+ kpi:hasFormula [
+		kpi:hasFunction om:plus;
+                kpi:hasArgument
+			[kpi:hasArgumentPosition 1;
+			 kpi:hasArgumentName "addend";
+			 kpi:hasArgumentValue covt:Total_Hospitalised_Patients_With_Symptoms];
+                kpi:hasArgument
+			[kpi:hasArgumentPosition 2;
+			 kpi:hasArgumentName "addend";
+			 kpi:hasArgumentValue covt:Total_Intensive_Care]
+		].
+
+covt:Total_Home_Confinement a kpi:Indicator;
+ rdfs:label "Total home confinement";
+ rdfs:comment "Current total number of cases in home confinement on the reference time".
+
+covt:Total_Positive_Cases a kpi:Indicator;
+ rdfs:label "Total positive cases";
+ rdfs:comment "Current total number of positive cases on the reference time";
+  kpi:hasFormula [
+		kpi:hasFunction om:plus;
+                kpi:hasArgument
+			[kpi:hasArgumentPosition 1;
+			 kpi:hasArgumentName "addend";
+			 kpi:hasArgumentValue covt:Total_Hospitalised_Patients];
+                kpi:hasArgument
+			[kpi:hasArgumentPosition 2;
+			 kpi:hasArgumentName "addend";
+			 kpi:hasArgumentValue covt:Total_Home_Confinement]
+		].
+
+covt:Variation_Total_Positive_Cases a kpi:Indicator;
+ rdfs:label "Variation total positive cases";
+ rdfs:comment "Variation of the current number of total positive cases with respect to the previous measurement".
+
+covt:New_Cases a kpi:Indicator;
+ rdfs:label "New cases";
+ rdfs:comment "Number of new cases".
+
+covt:Total_Recovered a kpi:Indicator;
+ rdfs:label "Total recovered";
+ rdfs:comment "Current total number of recovered cases on the reference time".
+
+covt:Total_Deaths a kpi:Indicator;
+ rdfs:label "Total deaths";
+ rdfs:comment "Current total number of deaths on the reference time".
+
+covt:Total_Cases a kpi:Indicator;
+ rdfs:label "Total cases";
+ rdfs:comment "Current total number of cases on the reference time";
+  kpi:hasFormula [
+		kpi:hasFunction om:plus;
+                kpi:hasArgument
+			[kpi:hasArgumentPosition 1;
+			 kpi:hasArgumentName "addend";
+			 kpi:hasArgumentValue cov:Total_Positive_Cases];
+                kpi:hasArgument
+			[kpi:hasArgumentPosition 2;
+			 kpi:hasArgumentName "addend";
+			 kpi:hasArgumentValue [
+				kpi:hasFunction om:plus;
+                		kpi:hasArgument
+					[kpi:hasArgumentPosition 1;
+					 kpi:hasArgumentName "addend";
+					 kpi:hasArgumentValue cov:Total_Recovered],
+					[kpi:hasArgumentPosition 2;
+					 kpi:hasArgumentName "addend";
+					 kpi:hasArgumentValue cov:Total_Deaths]
+			        ]
+                       ]
+  ]. 
+
+
+covt:Total_Tests_Performed a kpi:Indicator;
+ rdfs:label "Total tests";
+ rdfs:comment "Current total number of tests on the reference time".
+
+covt:Total_Cases_Tested a kpi:Indicator;
+ rdfs:label "Total number of cases tested";
+ rdfs:comment "Current total number of cases tested on the reference time".
+
+#Definition of dimensions
+
+covt:refTime a qb:Dimension.
+
+covt:refArea a qb:Dimension.
+
+
+#Definition of notes
+
+covt:Note a rdfs:Class;
+	rdfs:comment "A note attached to an observation."^^xsd:string.
+
+covt:PartialDataNote rdfs:subClassOf covt:Note;
+	rdfs:comment "A note declaring that data is partial."^^xsd:string.
+
+covt:NoDataNote rdfs:subClassOf covt:Note.
+	rdfs:comment "A note declaring that data is not available."^^xsd:string.
+
+covt:DataCorrectionNote rdfs:subClassOf covt:Note.
+	rdfs:comment "A note declaring a data correction."^^xsd:string.
+
+covt:noticeDescription rdfs:subPropertyOf rdf:Property;
+	rdfs:domain covt:Note;
+	rdfs:range rdfs:Literal.
+
+covt:otherInformation rdfs:subPropertyOf rdf:Property;
+	rdfs:domain covt:Note;
+	rdfs:range rdfs:Literal.
+
+covt:note rdfs:subPropertyOf rdf:Property;
+	rdfs:domain qb:Observation;
+	rdfs:range covt:Note.
+
+
