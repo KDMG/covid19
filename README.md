@@ -20,19 +20,19 @@ The [`/dataset`](/dataset) folder includes:
 As an example, the following observation describes the measurements taken in the Marche region on 1 May 2020.
 
 ```
-  cov:obs1417 a qb:Observation ;
+cov:obs1417 a qb:Observation ;
     cov:New_Cases 28 ;
-    cov:Total_Active_Cases 3211 ;
     cov:Total_Cases 6275 ;
     cov:Total_Cases_Tested 40123 ;
     cov:Total_Deaths 911 ;
-    cov:Total_Home_Isolation 2754 ;
-    cov:Total_Hospitalized 457 ;
-    cov:Total_Hospitalized_With_Sympthoms 413 ;
+    cov:Total_Home_Confinement 2754 ;
+    cov:Total_Hospitalised_Patients_With_Symptoms 413 ;
+    cov:Total_Hospitalized_Patients 457 ;
     cov:Total_Intensive_Care 44 ;
+    cov:Total_Positive_Cases 3211 ;
     cov:Total_Recovered 2153 ;
-    cov:Total_Tests 61241 ;
-    cov:Variation_Total_Active_Cases 1 ;
+    cov:Total_Tests_Performed 61241 ;
+    cov:Variation_Total_Positive_Cases 1 ;
     cov:refArea dbr:Marche ;
     cov:refTime "2020-05-01T17:00:00"^^xsd:dateTime ;
     qb:dataSet cov:covid19Italy .
