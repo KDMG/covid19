@@ -15,7 +15,7 @@ Our dataset relies on the [RDF Data Cube Vocabulary](https://www.w3.org/TR/vocab
 The [`/dataset`](/dataset) folder includes:
 
 * [`covid19-ita_dsd.ttl`](/dataset/covid19-ita_dsd.ttl): the Data Structure Definition of the dataset. Here, dataset metadata are provided together with definition of dimensions, measures and attributes. By extending the RDF Data Cube vocabulary, our representation of measures include also their explicit mathematical meaning, namely their calculation formula, according to the [KPIOnto vocabulary](http://w3id.org/kpionto).
-* [`covid19-ita-regioni_sample.ttl`](/dataset/covid19-ita-regioni_sample.ttl): a sample of the regional dataset. Observations are organized according to the Data Structure Definition. 
+* [`covid19-ita-regioni.ttl`](/dataset/covid19-ita-regioni.ttl): the regional dataset (last update: 2020-05-29). Observations are organized according to the Data Structure Definition. 
 
 As an example, the following observation describes the measurements taken in the Marche region on 1 May 2020.
 
@@ -48,6 +48,7 @@ The project is licenced under the [Creative Commons Attribution 4.0 Internationa
 
 ### Changelog
 * 2020-05-17: publication of the Data Structure Definition and a sample of the regional dataset
+* 2020-05-29: publication of the full dataset for regions
 
 ### Contacts
 For information or requests, please contact Emanuele Storti - <e.storti@univpm.it>
