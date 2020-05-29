@@ -32,10 +32,10 @@ cov:dsd a qb:DataStructureDefinition ;
   rdfs:label "DSD for the COVID-19 Italy dataset"@en ;
   qb:component 	[qb:dimension cov:refPeriod];
   qb:component 	[qb:dimension cov:refArea];
-  qb:component  [qb:measure cov:Total_Hospitalized_With_Sympthoms];
+  qb:component  [qb:measure cov:Total_Hospitalised_Patients_With_Symptoms];
   qb:component  [qb:measure cov:Total_Intensive_Care];
-  qb:component  [qb:measure cov:Total_Hospitalized];
-  qb:component  [qb:measure cov:Total_Home_Isolation];
+  qb:component  [qb:measure cov:Total_Hospitalised_Patients];
+  qb:component  [qb:measure cov:Total_Home_Confinement];
   qb:component  [qb:measure cov:Total_Active_Cases];
   qb:component  [qb:measure cov:Variation_Total_Active_Cases];
   qb:component  [qb:measure cov:New_Cases];
@@ -46,50 +46,50 @@ cov:dsd a qb:DataStructureDefinition ;
   qb:component  [qb:measure cov:Total_Cases_Tested];
   qb:component  [qb:attribute cov:Note].
 
-cov:Total_Hospitalized_With_Sympthoms a kpi:Indicator;
- rdfs:label "Total hospitalized with sympthoms";
- rdfs:comment "Current total number of cases hospitalized with sympthoms on the reference time".
+cov:Total_Hospitalised_Patients_With_Symptoms a kpi:Indicator;
+ rdfs:label "Total hospitalized patients with symptoms";
+ rdfs:comment "Current total number of cases hospitalized with symptoms on the reference time".
 
 cov:Total_Intensive_Care a kpi:Indicator;
  rdfs:label "Total intensive care";
  rdfs:comment "Current total number of cases hospitalized requiring intensive care on the reference time".
 
-cov:Total_Hospitalized a kpi:Indicator;
- rdfs:label "Total hospitalized";
- rdfs:comment "Current total number of cases hospitalized on the reference time";
+cov:Total_Hospitalised_Patients a kpi:Indicator;
+ rdfs:label "Total hospitalised patiens";
+ rdfs:comment "Current total number of positive patients hospitalised on the reference time";
  kpi:hasFormula [
 		kpi:hasFunction om:plus;
                 kpi:hasArgument
 			[kpi:hasArgumentPosition 1;
 			 kpi:hasArgumentName "addend";
-			 kpi:hasArgumentValue cov:Total_Hospitalized_With_Sympthoms];
+			 kpi:hasArgumentValue cov:Total_Hospitalised_Patients_With_Symptoms];
                 kpi:hasArgument
 			[kpi:hasArgumentPosition 2;
 			 kpi:hasArgumentName "addend";
 			 kpi:hasArgumentValue cov:Total_Intensive_Care]
 		].
 
-cov:Total_Home_Isolation a kpi:Indicator;
- rdfs:label "Total home isolation";
- rdfs:comment "Current total number of cases in home isolation on the reference time".
+cov:Total_Home_Confinement a kpi:Indicator;
+ rdfs:label "Total home confinement";
+ rdfs:comment "Current total number of cases in home confinement on the reference time".
 
-cov:Total_Active_Cases a kpi:Indicator;
- rdfs:label "Total active cases";
+cov:Total_Positive_Cases a kpi:Indicator;
+ rdfs:label "Total positive cases";
  rdfs:comment "Current total number of positive cases on the reference time";
   kpi:hasFormula [
 		kpi:hasFunction om:plus;
                 kpi:hasArgument
 			[kpi:hasArgumentPosition 1;
 			 kpi:hasArgumentName "addend";
-			 kpi:hasArgumentValue cov:Total_Hospitalized];
+			 kpi:hasArgumentValue cov:Total_Hospitalised_Patients];
                 kpi:hasArgument
 			[kpi:hasArgumentPosition 2;
 			 kpi:hasArgumentName "addend";
-			 kpi:hasArgumentValue cov:Total_Home_Isolation]
+			 kpi:hasArgumentValue cov:Total_Home_Confinement]
 		].
 
-cov:Variation_Total_Active_Cases a kpi:Indicator;
- rdfs:label "Variation total active cases";
+cov:Variation_Total_Positive_Cases a kpi:Indicator;
+ rdfs:label "Variation total positive cases";
  rdfs:comment "Variation of the current number of total positive cases with respect to the previous measurement".
 
 cov:New_Cases a kpi:Indicator;
@@ -112,7 +112,7 @@ cov:Total_Cases a kpi:Indicator;
                 kpi:hasArgument
 			[kpi:hasArgumentPosition 1;
 			 kpi:hasArgumentName "addend";
-			 kpi:hasArgumentValue cov:Total_Active_Cases];
+			 kpi:hasArgumentValue cov:Total_Positive_Cases];
                 kpi:hasArgument
 			[kpi:hasArgumentPosition 2;
 			 kpi:hasArgumentName "addend";
@@ -130,10 +130,11 @@ cov:Total_Cases a kpi:Indicator;
   ]. 
 
 
-cov:Total_Tests a kpi:Indicator;
+cov:Total_Tests_Performed a kpi:Indicator;
  rdfs:label "Total tests";
  rdfs:comment "Current total number of tests on the reference time".
 
 cov:Total_Cases_Tested a kpi:Indicator;
  rdfs:label "Total number of cases tested";
  rdfs:comment "Current total number of cases tested on the reference time".
+
