@@ -16,6 +16,7 @@ The [`/dataset`](/dataset) folder includes:
 
 * [`covid19-ita_dsd.ttl`](/dataset/covid19-ita_dsd.ttl): the RDF Data Cube Data Structure Definition of the dataset. Here, dataset metadata are provided.
 * [`covid19-ita_sd.ttl`](/dataset/covid19-ita_sd.ttl): the schema definition, i.e. the ontology providing definition of dimensions, measures, attributes and other classes and properties. By extending the RDF Data Cube vocabulary, our representation of measures include also their explicit mathematical meaning, namely their calculation formula, according to the [KPIOnto vocabulary](http://w3id.org/kpionto).
+* [`covid19-ita-andamento-nazionale.ttl`](/dataset/covid19-ita-andamento-nazionale.ttl): the national dataset. Observations are organized according to the Data Structure Definition. 
 * [`covid19-ita-regioni.ttl`](/dataset/covid19-ita-regioni.ttl): the regional dataset. Observations are organized according to the Data Structure Definition. 
 * [`covid19-ita-note-en.ttl`](/dataset/covid19-ita-note-en.ttl): the dataset of the notes describing specific exceptions occurred in monitoring.
 
@@ -51,6 +52,7 @@ The project is licenced under the [Creative Commons Attribution 4.0 Internationa
 * 2020-05-17: publication of the Data Structure Definition and a sample of the regional dataset
 * 2020-05-29: publication of the full dataset for regions
 * 2020-05-30: publication of the dataset of notes for observation at province, regional and national levels
-
+* 2020-05-30: publication of the full national dataset
+ 
 ### Contacts
 For information or requests, please contact Emanuele Storti - <e.storti@univpm.it>
