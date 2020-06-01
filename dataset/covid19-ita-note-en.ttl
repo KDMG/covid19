@@ -277,13 +277,19 @@ cov:nd-0014 a covt:NoDataNote ;
 
 cov:nd-0015 a covt:NoDataNote ;
     covt:noticeDescription "no data has been sent"^^xsd:string ;
-    covt:refArea dbr:Province_of_Parma ;
-    covt:refTime "2020-03-18T17:00:00"^^xsd:dateTime .
+    covt:otherInformation "data update not received"^^xsd:string ;
+    covt:refArea dbr:Abruzzo,
+        dbr:Province_of_Parma ;
+    covt:refTime "2020-03-18T17:00:00"^^xsd:dateTime,
+        "2020-05-30T17:00:00"^^xsd:dateTime .
 
 cov:nd-0016 a covt:NoDataNote ;
     covt:noticeDescription "no data has been sent"^^xsd:string ;
-    covt:refArea dbr:Province_of_Parma ;
-    covt:refTime "2020-03-18T17:00:00"^^xsd:dateTime .
+    covt:otherInformation "data update not received"^^xsd:string ;
+    covt:refArea dbr:Abruzzo,
+        dbr:Province_of_Parma ;
+    covt:refTime "2020-03-18T17:00:00"^^xsd:dateTime,
+        "2020-05-30T17:00:00"^^xsd:dateTime .
 
 cov:nd-0017 a covt:NoDataNote ;
     covt:noticeDescription "no data has been sent"^^xsd:string ;
@@ -406,4 +412,16 @@ cov:pd-0021 a covt:PartialDataNote ;
     covt:otherInformation "deceased people data not updated"^^xsd:string ;
     covt:refArea dbr:Lombardy ;
     covt:refTime "2020-05-24T17:00:00"^^xsd:dateTime .
+
+cov:pd-0022 a covt:PartialDataNote ;
+    covt:noticeDescription "partial communication of data"^^xsd:string ;
+    covt:otherInformation "home isolation and discharged/healed people data not updated"^^xsd:string ;
+    covt:refArea dbr:Abruzzo ;
+    covt:refTime "2020-05-31T17:00:00"^^xsd:dateTime .
+
+cov:pd-0023 a covt:PartialDataNote ;
+    covt:noticeDescription "partial communication of data"^^xsd:string ;
+    covt:otherInformation "home isolation and discharged/healed people data not updated"^^xsd:string ;
+    covt:refArea dbr:Abruzzo ;
+    covt:refTime "2020-05-31T17:00:00"^^xsd:dateTime .
 

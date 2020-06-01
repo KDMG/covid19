@@ -9,7 +9,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix cov: <http://kdmg.dii.univpm.it/datasets/covid19italy/> .
 @prefix covt: <http://kdmg.dii.univpm.it/datasets/covid19italy/terms> .
-
+@prefix sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#> .
 
 #Dataset
 
@@ -31,20 +31,20 @@ cov:covid19Italy a qb:DataSet;
 
 cov:dsd a qb:DataStructureDefinition ;
   rdfs:label "DSD for the COVID-19 Italy dataset"@en ;
-  qb:component 	[qb:dimension cov:refPeriod];
-  qb:component 	[qb:dimension cov:refArea];
-  qb:component  [qb:measure cov:Total_Hospitalised_Patients_With_Symptoms];
-  qb:component  [qb:measure cov:Total_Intensive_Care];
-  qb:component  [qb:measure cov:Total_Hospitalised_Patients];
-  qb:component  [qb:measure cov:Total_Home_Confinement];
-  qb:component  [qb:measure cov:Total_Active_Cases];
-  qb:component  [qb:measure cov:Variation_Total_Active_Cases];
-  qb:component  [qb:measure cov:New_Cases];
-  qb:component  [qb:measure cov:Total_Recovered];
-  qb:component  [qb:measure cov:Total_Deaths];
-  qb:component  [qb:measure cov:Total_Cases];
-  qb:component  [qb:measure cov:Total_Tests];
-  qb:component  [qb:measure cov:Total_Cases_Tested];
-  qb:component  [qb:attribute cov:Note].
+  qb:component 	[qb:dimension sdmx-dimension:refPeriod];
+  qb:component 	[qb:dimension sdmx-dimension:refArea];
+  qb:component  [qb:measure covt:Total_Hospitalised_Patients_With_Symptoms];
+  qb:component  [qb:measure covt:Total_Intensive_Care];
+  qb:component  [qb:measure covt:Total_Hospitalised_Patients];
+  qb:component  [qb:measure covt:Total_Home_Confinement];
+  qb:component  [qb:measure covt:Total_Active_Cases];
+  qb:component  [qb:measure covt:Variation_Total_Active_Cases];
+  qb:component  [qb:measure covt:New_Cases];
+  qb:component  [qb:measure covt:Total_Recovered];
+  qb:component  [qb:measure covt:Total_Deaths];
+  qb:component  [qb:measure covt:Total_Cases];
+  qb:component  [qb:measure covt:Total_Tests];
+  qb:component  [qb:measure covt:Total_Cases_Tested];
+  qb:component  [qb:attribute covt:Note].
 
 

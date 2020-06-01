@@ -98,12 +98,6 @@ covt:Total_Cases_Tested a kpi:Indicator;
  rdfs:label "Total number of cases tested";
  rdfs:comment "Current total number of cases tested on the reference time".
 
-#Definition of dimensions
-
-covt:refTime a qb:Dimension.
-
-covt:refArea a qb:Dimension.
-
 
 #Definition of notes
 
