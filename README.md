@@ -48,11 +48,6 @@ The full dataset for regions and the dataset for provinces will be uploaded soon
 ### Licence
 The project is licenced under the [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/deed.it) [(show the licence)](LICENCE)
 
-### Changelog
-* 2020-05-17: publication of the Data Structure Definition and a sample of the regional dataset
-* 2020-05-29: publication of the full dataset for regions
-* 2020-05-30: publication of the dataset of notes for observation at province, regional and national levels
-* 2020-05-30: publication of the full national dataset
  
 ### Contacts
 For information or requests, please contact Emanuele Storti - <e.storti@univpm.it>
