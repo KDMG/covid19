@@ -225,6 +225,42 @@ cov:dc-0037 a covt:DataCorrectionNote ;
     covt:refArea dbr:Marche ;
     covt:refTime "2020-05-29T17:00:00"^^xsd:dateTime .
 
+cov:dc-0038 a covt:DataCorrectionNote ;
+    covt:noticeDescription "recalculation of information"^^xsd:string ;
+    covt:otherInformation "recalculation of tested cases"^^xsd:string ;
+    covt:refArea dbr:Marche ;
+    covt:refTime "2020-06-04T17:00:00"^^xsd:dateTime .
+
+cov:dc-0039 a covt:DataCorrectionNote ;
+    covt:noticeDescription "recalculation of information"^^xsd:string ;
+    covt:otherInformation "recalculation of tested cases"^^xsd:string ;
+    covt:refArea dbr:Marche ;
+    covt:refTime "2020-06-04T17:00:00"^^xsd:dateTime .
+
+cov:dc-0040 a covt:DataCorrectionNote ;
+    covt:noticeDescription "recalculation of information"^^xsd:string ;
+    covt:otherInformation "1 death attributable to today and 32 deaths occurred in previous periods"^^xsd:string ;
+    covt:refArea dbr:Abruzzo ;
+    covt:refTime "2020-06-09T17:00:00"^^xsd:dateTime .
+
+cov:dc-0041 a covt:DataCorrectionNote ;
+    covt:noticeDescription "recalculation of information"^^xsd:string ;
+    covt:otherInformation "1 death attributable to today and 32 deaths occurred in previous periods"^^xsd:string ;
+    covt:refArea dbr:Abruzzo ;
+    covt:refTime "2020-06-09T17:00:00"^^xsd:dateTime .
+
+cov:dc-0042 a covt:DataCorrectionNote ;
+    covt:noticeDescription "recalculation of information"^^xsd:string ;
+    covt:otherInformation "-1 positive case compared to yesterday"^^xsd:string ;
+    covt:refArea dbr:Sardinia ;
+    covt:refTime "2020-06-09T17:00:00"^^xsd:dateTime .
+
+cov:dc-0043 a covt:DataCorrectionNote ;
+    covt:noticeDescription "recalculation of information"^^xsd:string ;
+    covt:otherInformation "-1 positive case compared to yesterday"^^xsd:string ;
+    covt:refArea dbr:Sardinia ;
+    covt:refTime "2020-06-09T17:00:00"^^xsd:dateTime .
+
 cov:nd-0005 a covt:PartialDataNote ;
     covt:noticeDescription "partial communication of data"^^xsd:string ;
     covt:refArea dbr:Lombardy ;
@@ -415,13 +451,13 @@ cov:pd-0021 a covt:PartialDataNote ;
 
 cov:pd-0022 a covt:PartialDataNote ;
     covt:noticeDescription "partial communication of data"^^xsd:string ;
-    covt:otherInformation "home isolation and discharged/healed people data not updated"^^xsd:string ;
+    covt:otherInformation "discharged/healed people data not updated"^^xsd:string ;
     covt:refArea dbr:Abruzzo ;
     covt:refTime "2020-05-31T17:00:00"^^xsd:dateTime .
 
 cov:pd-0023 a covt:PartialDataNote ;
     covt:noticeDescription "partial communication of data"^^xsd:string ;
-    covt:otherInformation "home isolation and discharged/healed people data not updated"^^xsd:string ;
+    covt:otherInformation "discharged/healed people data not updated"^^xsd:string ;
     covt:refArea dbr:Abruzzo ;
     covt:refTime "2020-05-31T17:00:00"^^xsd:dateTime .
 

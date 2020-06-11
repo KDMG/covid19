@@ -18,7 +18,8 @@ The [`/dataset`](/dataset) folder includes:
 * [`covid19-ita_sd.ttl`](/dataset/covid19-ita_sd.ttl): the schema definition, i.e. the ontology providing definition of dimensions, measures, attributes and other classes and properties. By extending the RDF Data Cube vocabulary, our representation of measures include also their explicit mathematical meaning, namely their calculation formula, according to the [KPIOnto vocabulary](http://w3id.org/kpionto).
 * [`covid19-ita-andamento-nazionale.ttl`](/dataset/covid19-ita-andamento-nazionale.ttl): the national dataset. Observations are organized according to the Data Structure Definition. 
 * [`covid19-ita-regioni.ttl`](/dataset/covid19-ita-regioni.ttl): the regional dataset. Observations are organized according to the Data Structure Definition. 
-* [`covid19-ita-note-en.ttl`](/dataset/covid19-ita-note-en.ttl): the dataset of the notes describing specific exceptions occurred in monitoring.
+* [`covid19-ita-province.ttl`](/dataset/covid19-ita-province.ttl): the province dataset. Observations are organized according to the Data Structure Definition. 
+* [`covid19-ita-note-en.ttl`](/dataset/covid19-ita-note-en.ttl): the dataset of the notes describing specific exceptions occurred in monitoring at national, regional or province levels.
 
 As an example, the following observation describes the measurements taken in the Marche region on 1 May 2020.
 
@@ -36,13 +37,12 @@ cov:obs1417 a qb:Observation ;
     cov:Total_Recovered 2153 ;
     cov:Total_Tests_Performed 61241 ;
     cov:Variation_Total_Positive_Cases 1 ;
-    cov:refArea dbr:Marche ;
+    cov:refArea covt:Marche ;
     cov:refTime "2020-05-01T17:00:00"^^xsd:dateTime ;
     qb:dataSet cov:covid19Italy .
 ```
 
 RDF serialization is provided in [Turtle syntax](https://www.w3.org/TR/turtle/). 
-The full dataset for regions and the dataset for provinces will be uploaded soon.
 
 
 ### Licence

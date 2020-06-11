@@ -1,17 +1,21 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix qb4o: <http://purl.org/qb4olap/cubes#> .
+@prefix sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#> .
 @prefix sdmx-subjects: <http://purl.org/linked-data/sdmx/2009/subject#> .
-@prefix kpi: <http://w3id.org/kpionto/> . 
-@prefix dbr: <http://dbpedia.org/resource/> .
 @prefix om:  <http://www.openmath.org/cd/arith1/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix cov: <http://kdmg.dii.univpm.it/datasets/covid19italy/> .
+@prefix kpi: <http://w3id.org/kpionto/> . 
 @prefix covt: <http://kdmg.dii.univpm.it/datasets/covid19italy/terms> .
-@prefix sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix cov: <http://kdmg.dii.univpm.it/datasets/covid19italy/> .
+@prefix dbr: <http://dbpedia.org/resource/> .
 
-#Dataset
+
+# -- Dataset definition
 
 cov:covid19Italy a qb:DataSet;
   rdfs:label "COVID-19 Italy";
@@ -27,7 +31,7 @@ cov:covid19Italy a qb:DataSet;
   qb:structure cov:dsd.
   
 
-# DataStructureDefinition
+# -- DataStructureDefinition
 
 cov:dsd a qb:DataStructureDefinition ;
   rdfs:label "DSD for the COVID-19 Italy dataset"@en ;
@@ -47,4 +51,603 @@ cov:dsd a qb:DataStructureDefinition ;
   qb:component  [qb:measure covt:Total_Cases_Tested];
   qb:component  [qb:attribute covt:Note].
 
+# ---------------------------------------------------------------------------------------
+# -- Dimension definition
+
+
+# refArea dimension
+
+  sdmx-dimension:refArea qb4o:hasHierarchy covt:areaHierarcy.
+  
+  covt:areaHierarchy a qb4o:Hierarchy ; 
+   rdfs:label "Hierarchy for refArea dimension"@en ;
+   qb4o:inDimension sdmx-dimension:refArea;
+   qb4o:hasLevel covt:countryLevel, covt:regionLevel, covt:provinceLevel, covt:refAreaAll.
+
+  covt:refAreaAll a qb4o:LevelProperty;
+   rdfs:label "All areas of refArea dimension"@en.
+
+  covt:countryLevel a qb4o:LevelProperty;
+   rdfs:label "Country level of refArea dimension"@en.
+
+  covt:regionLevel a qb4o:LevelProperty;
+   rdfs:label "Region level of refArea dimension"@en.
+
+  covt:provinceLevel a qb4o:LevelProperty;
+   rdfs:label "Province level of refArea dimension"@en.
+
+  _:refAreaStep1 a qb4o:HierarchyStep;
+   qb4o:inHierarchy covt:areaHierarchy; 
+   qb4o:childLevel covt:countryLevel; 
+   qb4o:parentLevel covt:refAreaAll;
+   qb4o:pcCardinality qb4o:OneToMany.
+
+  _:refAreaStep2 a qb4o:HierarchyStep;
+   qb4o:inHierarchy covt:areaHierarchy; 
+   qb4o:childLevel covt:regionLevel; 
+   qb4o:parentLevel covt:countryLevel;
+   qb4o:pcCardinality qb4o:OneToMany.
+
+  _:refAreaStep3 a qb4o:HierarchyStep;
+   qb4o:inHierarchy covt:areaHierarchy; 
+   qb4o:childLevel covt:provinceLevel; 
+   qb4o:parentLevel covt:regionLevel;
+   qb4o:pcCardinality qb4o:OneToMany.
+
+
+# -- refPeriod dimension
+
+  sdmx-dimension:refPeriod qb4o:hasHierarchy covt:periodHierarcy.
+  
+  covt:periodHierarchy a qb4o:Hierarchy ; 
+   rdfs:label "Hierarchy for refPeriod dimension"@en ;
+   qb4o:inDimension sdmx-dimension:refPeriod;
+   qb4o:hasLevel covt:dayLevel, covt:monthLevel, covt:refPeriodAll.
+
+  covt:refPeriodAll a qb4o:LevelProperty;
+   rdfs:label "All periods"@en.
+
+  covt:monthLevel a qb4o:LevelProperty;
+   rdfs:label "Month level of refPeriod dimension"@en.
+
+  covt:dayLevel a qb4o:LevelProperty;
+   rdfs:label "Day level of refPeriod dimension"@en.
+
+  _:refPeriodStep1 a qb4o:HierarchyStep;
+   qb4o:inHierarchy covt:periodHierarchy; 
+   qb4o:childLevel covt:monthLevel; 
+   qb4o:parentLevel covt:refPeriodAll;
+   qb4o:pcCardinality qb4o:OneToMany.
+
+  _:refPeriodStep2 a qb4o:HierarchyStep;
+   qb4o:inHierarchy covt:periodHierarchy; 
+   qb4o:childLevel covt:dayLevel; 
+   qb4o:parentLevel covt:monthLevel;
+   qb4o:pcCardinality qb4o:OneToMany.
+
+# ---------------------------------------------------------------------------------------
+# -- Instance definition
+
+
+# -- Instances for refArea dimension
+
+  covt:AllArea
+   qb4o:memberOf covt:refAreaAll.
+
+  covt:Italy
+    qb4o:memberOf covt:countryLevel;
+    skos:broader covt:AllArea;
+    owl:sameAs dbr:Italy.
+
+  covt:Abruzzo qb4o:memberOf covt:regionLevel ;
+    owl:sameAs dbr:Abruzzo ;
+    skos:broader covt:Italy .
+
+  covt:Basilicata qb4o:memberOf covt:regionLevel ;
+    owl:sameAs dbr:Basilicata ;
+    skos:broader covt:Italy .
+
+  covt:Calabria qb4o:memberOf covt:regionLevel ;
+    owl:sameAs dbr:Calabria ;
+    skos:broader covt:Italy .
+
+  covt:Campania qb4o:memberOf covt:regionLevel ;
+    owl:sameAs dbr:Campania ;
+    skos:broader covt:Italy .
+
+  covt:Emilia-Romagna qb4o:memberOf covt:regionLevel ;
+    owl:sameAs dbr:Emilia-Romagna ;
+    skos:broader covt:Italy .
+
+  covt:Friuli_Venezia_Giulia qb4o:memberOf covt:regionLevel ;
+    owl:sameAs dbr:Friuli-Venezia_Giulia ;
+    skos:broader covt:Italy .
+
+  covt:Lazio qb4o:memberOf covt:regionLevel ;
+    owl:sameAs dbr:Lazio ;
+    skos:broader covt:Italy .
+
+  covt:Liguria qb4o:memberOf covt:regionLevel ;
+    owl:sameAs dbr:Liguria ;
+    skos:broader covt:Italy .
+
+  covt:Lombardia qb4o:memberOf covt:regionLevel ;
+    owl:sameAs dbr:Lombardy ;
+    skos:broader covt:Italy .
+
+  covt:Marche qb4o:memberOf covt:regionLevel ;
+    owl:sameAs dbr:Marche ;
+    skos:broader covt:Italy .
+
+  covt:Molise qb4o:memberOf covt:regionLevel ;
+    owl:sameAs dbr:Molise ;
+    skos:broader covt:Italy .
+
+  covt:P.A._Bolzano qb4o:memberOf covt:regionLevel ;
+    owl:sameAs dbr:South_Tyrol ;
+    skos:broader covt:Italy .
+
+  covt:P.A._Trento qb4o:memberOf covt:regionLevel ;
+    owl:sameAs dbr:Trentino ;
+    skos:broader covt:Italy .
+
+  covt:Piemonte qb4o:memberOf covt:regionLevel ;
+    owl:sameAs dbr:Piedmont ;
+    skos:broader covt:Italy .
+
+  covt:Puglia qb4o:memberOf covt:regionLevel ;
+    owl:sameAs dbr:Apulia ;
+    skos:broader covt:Italy .
+
+  covt:Sardegna qb4o:memberOf covt:regionLevel ;
+    owl:sameAs dbr:Sardinia ;
+    skos:broader covt:Italy .
+
+  covt:Sicilia qb4o:memberOf covt:regionLevel ;
+    owl:sameAs dbr:Sicily ;
+    skos:broader covt:Italy .
+
+  covt:Toscana qb4o:memberOf covt:regionLevel ;
+    owl:sameAs dbr:Tuscany ;
+    skos:broader covt:Italy .
+
+  covt:Umbria qb4o:memberOf covt:regionLevel ;
+    owl:sameAs dbr:Umbria ;
+    skos:broader covt:Italy .
+
+  covt:Valle_d_Aosta qb4o:memberOf covt:regionLevel ;
+    owl:sameAs dbr:Aosta_Valley ;
+    skos:broader covt:Italy .
+
+  covt:Veneto qb4o:memberOf covt:regionLevel ;
+    owl:sameAs dbr:Veneto ;
+    skos:broader covt:Italy .
+
+  covt:Agrigento qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Agrigento ;
+    skos:broader covt:Sicilia .
+
+  covt:Alessandria qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Alessandria ;
+    skos:broader covt:Piemonte .
+
+  covt:Ancona qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Ancona ;
+    skos:broader covt:Marche .
+
+  covt:Aosta qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Aosta_Valley ;
+    skos:broader covt:Valle_d_Aosta .
+
+  covt:Arezzo qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Arezzo ;
+    skos:broader covt:Toscana .
+
+  covt:Ascoli_Piceno qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Ascoli_Piceno ;
+    skos:broader covt:Marche .
+
+  covt:Asti qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Asti ;
+    skos:broader covt:Piemonte .
+
+  covt:Avellino qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Avellino ;
+    skos:broader covt:Campania .
+
+  covt:Bari qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Bari ;
+    skos:broader covt:Puglia .
+
+  covt:Barletta-Andria-Trani qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Barletta-Andria-Trani ;
+    skos:broader covt:Puglia .
+
+  covt:Belluno qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Belluno ;
+    skos:broader covt:Veneto .
+
+  covt:Benevento qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Benevento ;
+    skos:broader covt:Campania .
+
+  covt:Bergamo qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Bergamo ;
+    skos:broader covt:Lombardia .
+
+  covt:Biella qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Biella ;
+    skos:broader covt:Piemonte .
+
+  covt:Bologna qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Bologna ;
+    skos:broader covt:Emilia-Romagna .
+
+  covt:Bolzano qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:South_Tyrol ;
+    skos:broader covt:P.A._Bolzano .
+
+  covt:Brescia qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Brescia ;
+    skos:broader covt:Lombardia .
+
+  covt:Brindisi qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Brindisi ;
+    skos:broader covt:Puglia .
+
+  covt:Cagliari qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Cagliari ;
+    skos:broader covt:Sardegna .
+
+  covt:Caltanissetta qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Caltanissetta ;
+    skos:broader covt:Sicilia .
+
+  covt:Campobasso qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Campobasso ;
+    skos:broader covt:Molise .
+
+  covt:Caserta qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Caserta ;
+    skos:broader covt:Campania .
+
+  covt:Catania qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Catania ;
+    skos:broader covt:Sicilia .
+
+  covt:Catanzaro qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Catanzaro ;
+    skos:broader covt:Calabria .
+
+  covt:Chieti qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Chieti ;
+    skos:broader covt:Abruzzo .
+
+  covt:Como qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Como ;
+    skos:broader covt:Lombardia .
+
+  covt:Cosenza qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Cosenza ;
+    skos:broader covt:Calabria .
+
+  covt:Cremona qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Cremona ;
+    skos:broader covt:Lombardia .
+
+  covt:Crotone qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Crotone ;
+    skos:broader covt:Calabria .
+
+  covt:Cuneo qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Cuneo ;
+    skos:broader covt:Piemonte .
+
+  covt:Enna qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Enna ;
+    skos:broader covt:Sicilia .
+
+  covt:Fermo qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Fermo ;
+    skos:broader covt:Marche .
+
+  covt:Ferrara qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Ferrara ;
+    skos:broader covt:Emilia-Romagna .
+
+  covt:Firenze qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Florence ;
+    skos:broader covt:Toscana .
+
+  covt:Foggia qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Foggia ;
+    skos:broader covt:Puglia .
+
+  covt:Forlì-Cesena qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Forlì-Cesena ;
+    skos:broader covt:Emilia-Romagna .
+
+  covt:Frosinone qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Frosinone ;
+    skos:broader covt:Lazio .
+
+  covt:Genova qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Genova ;
+    skos:broader covt:Liguria .
+
+  covt:Gorizia qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Gorizia ;
+    skos:broader covt:Friuli_Venezia_Giulia .
+
+  covt:Grosseto qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Grosseto ;
+    skos:broader covt:Toscana .
+
+  covt:Imperia qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Imperia ;
+    skos:broader covt:Liguria .
+
+  covt:Isernia qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Isernia ;
+    skos:broader covt:Molise .
+
+  covt:L_Aquila qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs <http://dbpedia.org/resource/Province_of_L%27Aquila> ;
+    skos:broader covt:Abruzzo .
+
+  covt:La_Spezia qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_La_Spezia ;
+    skos:broader covt:Liguria .
+
+  covt:Latina qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Latina ;
+    skos:broader covt:Lazio .
+
+  covt:Lecce qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Lecce ;
+    skos:broader covt:Puglia .
+
+  covt:Lecco qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Lecco ;
+    skos:broader covt:Lombardia .
+
+  covt:Livorno qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Livorno ;
+    skos:broader covt:Toscana .
+
+  covt:Lodi qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Lodi ;
+    skos:broader covt:Lombardia .
+
+  covt:Lucca qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Lucca ;
+    skos:broader covt:Toscana .
+
+  covt:Macerata qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Macerata ;
+    skos:broader covt:Marche .
+
+  covt:Mantova qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Mantua ;
+    skos:broader covt:Lombardia .
+
+  covt:Massa_Carrara qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Massa_and_Carrara ;
+    skos:broader covt:Toscana .
+
+  covt:Matera qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Matera ;
+    skos:broader covt:Basilicata .
+
+  covt:Messina qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Messina ;
+    skos:broader covt:Sicilia .
+
+  covt:Milano qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Milan ;
+    skos:broader covt:Lombardia .
+
+  covt:Modena qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Modena ;
+    skos:broader covt:Emilia-Romagna .
+
+  covt:Monza_e_della_Brianza qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Monza_and_Brianza ;
+    skos:broader covt:Lombardia .
+
+  covt:Napoli qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Naples ;
+    skos:broader covt:Campania .
+
+  covt:Novara qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Novara ;
+    skos:broader covt:Piemonte .
+
+  covt:Nuoro qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Nuoro ;
+    skos:broader covt:Sardegna .
+
+  covt:Oristano qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Oristano ;
+    skos:broader covt:Sardegna .
+
+  covt:Padova qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Padua ;
+    skos:broader covt:Veneto .
+
+  covt:Palermo qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Palermo ;
+    skos:broader covt:Sicilia .
+
+  covt:Parma qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Parma ;
+    skos:broader covt:Emilia-Romagna .
+
+  covt:Pavia qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Pavia ;
+    skos:broader covt:Lombardia .
+
+  covt:Perugia qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Perugia ;
+    skos:broader covt:Umbria .
+
+  covt:Pesaro_e_Urbino qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Pesaro_and_Urbino ;
+    skos:broader covt:Marche .
+
+  covt:Pescara qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Pescara ;
+    skos:broader covt:Abruzzo .
+
+  covt:Piacenza qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Piacenza ;
+    skos:broader covt:Emilia-Romagna .
+
+  covt:Pisa qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Pisa ;
+    skos:broader covt:Toscana .
+
+  covt:Pistoia qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Pistoia ;
+    skos:broader covt:Toscana .
+
+  covt:Pordenone qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Pordenone ;
+    skos:broader covt:Friuli_Venezia_Giulia .
+
+  covt:Potenza qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Potenza ;
+    skos:broader covt:Basilicata .
+
+  covt:Prato qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Prato ;
+    skos:broader covt:Toscana .
+
+  covt:Ragusa qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Ragusa ;
+    skos:broader covt:Sicilia .
+
+  covt:Ravenna qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Ravenna ;
+    skos:broader covt:Emilia-Romagna .
+
+  covt:Reggio_di_Calabria qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Reggio_Calabria ;
+    skos:broader covt:Calabria .
+
+  covt:Reggio_nell_Emilia qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Reggio_Emilia ;
+    skos:broader covt:Emilia-Romagna .
+
+  covt:Rieti qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Rieti ;
+    skos:broader covt:Lazio .
+
+  covt:Rimini qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Rimini ;
+    skos:broader covt:Emilia-Romagna .
+
+  covt:Roma qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Rome ;
+    skos:broader covt:Lazio .
+
+  covt:Rovigo qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Rovigo ;
+    skos:broader covt:Veneto .
+
+  covt:Salerno qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Salerno ;
+    skos:broader covt:Campania .
+
+  covt:Sassari qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Sassari ;
+    skos:broader covt:Sardegna .
+
+  covt:Savona qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Savona ;
+    skos:broader covt:Liguria .
+
+  covt:Siena qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Siena ;
+    skos:broader covt:Toscana .
+
+  covt:Siracusa qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Syracuse ;
+    skos:broader covt:Sicilia .
+
+  covt:Sondrio qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Sondrio ;
+    skos:broader covt:Lombardia .
+
+  covt:Sud_Sardegna qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_South_Sardinia ;
+    skos:broader covt:Sardegna .
+
+  covt:Taranto qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Taranto ;
+    skos:broader covt:Puglia .
+
+  covt:Teramo qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Teramo ;
+    skos:broader covt:Abruzzo .
+
+  covt:Terni qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Terni ;
+    skos:broader covt:Umbria .
+
+  covt:Torino qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Turin ;
+    skos:broader covt:Piemonte .
+
+  covt:Trapani qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Trapani ;
+    skos:broader covt:Sicilia .
+
+  covt:Trento qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Trentino ;
+    skos:broader covt:P.A._Trento .
+
+  covt:Treviso qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Treviso ;
+    skos:broader covt:Veneto .
+
+  covt:Trieste qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Trieste ;
+    skos:broader covt:Friuli_Venezia_Giulia .
+
+  covt:Udine qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Udine ;
+    skos:broader covt:Friuli_Venezia_Giulia .
+
+  covt:Varese qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Varese ;
+    skos:broader covt:Lombardia .
+
+  covt:Venezia qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Venice ;
+    skos:broader covt:Veneto .
+
+  covt:Verbano-Cusio-Ossola qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Verbano-Cusio-Ossola ;
+    skos:broader covt:Piemonte .
+
+  covt:Vercelli qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Vercelli ;
+    skos:broader covt:Piemonte .
+
+  covt:Verona qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Verona ;
+    skos:broader covt:Veneto .
+
+  covt:Vibo_Valentia qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Vibo_Valentia ;
+    skos:broader covt:Calabria .
+
+  covt:Vicenza qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Vicenza ;
+    skos:broader covt:Veneto .
+
+  covt:Viterbo qb4o:memberOf covt:provinceLevel ;
+    owl:sameAs dbr:Province_of_Viterbo ;
+    skos:broader covt:Lazio .
 
