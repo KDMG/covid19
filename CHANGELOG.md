@@ -19,10 +19,9 @@ All changes to the datasets and the schema are documented in this file.
 ## 2020-06-01
 - Change: dimensions refArea and refPeriod are mapped to the "sdmx-dimension" namespace
 
-## 2020-06-11
-- Change: definition of a dimensional hierarchy for dimension refPeriod and refTime according to QB4OLAP vocabulary
-- Add: the full dataset for provinces
 
-#Next steps
+# Next steps
+- definition of a dimensional hierarchy for dimension refPeriod and refTime according to QB4OLAP vocabulary
+- publication of the dataset for provinces
 - publication of the dataset of contracts
 - setup of a SPARQL endpoint
