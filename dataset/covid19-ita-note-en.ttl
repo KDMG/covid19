@@ -261,6 +261,30 @@ cov:dc-0043 a covt:DataCorrectionNote ;
     covt:refArea dbr:Sardinia ;
     covt:refTime "2020-06-09T17:00:00"^^xsd:dateTime .
 
+cov:dc-0044 a covt:DataCorrectionNote ;
+    covt:noticeDescription "recalculation of information"^^xsd:string ;
+    covt:otherInformation "recalculation of deceased (-1 related to yesterday)"^^xsd:string ;
+    covt:refArea dbr:South_Tyrol ;
+    covt:refTime "2020-06-12T17:00:00"^^xsd:dateTime .
+
+cov:dc-0045 a covt:DataCorrectionNote ;
+    covt:noticeDescription "recalculation of information"^^xsd:string ;
+    covt:otherInformation "recalculation of deceased (-1 related to yesterday)"^^xsd:string ;
+    covt:refArea dbr:South_Tyrol ;
+    covt:refTime "2020-06-12T17:00:00"^^xsd:dateTime .
+
+cov:dc-0046 a covt:DataCorrectionNote ;
+    covt:noticeDescription "recalculation of information"^^xsd:string ;
+    covt:otherInformation "recalculation of positive cases (-230)"^^xsd:string ;
+    covt:refArea dbr:Campania ;
+    covt:refTime "2020-06-12T17:00:00"^^xsd:dateTime .
+
+cov:dc-0047 a covt:DataCorrectionNote ;
+    covt:noticeDescription "recalculation of information"^^xsd:string ;
+    covt:otherInformation "recalculation of positive cases (-230)"^^xsd:string ;
+    covt:refArea dbr:Campania ;
+    covt:refTime "2020-06-12T17:00:00"^^xsd:dateTime .
+
 cov:nd-0005 a covt:PartialDataNote ;
     covt:noticeDescription "partial communication of data"^^xsd:string ;
     covt:refArea dbr:Lombardy ;
