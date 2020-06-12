@@ -1,8 +1,13 @@
-@prefix cov: <http://kdmg.dii.univpm.it/datasets/covid19italy/> .
-@prefix covt: <http://kdmg.dii.univpm.it/datasets/covid19italy/terms> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dbr: <http://dbpedia.org/resource/> .
 @prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix covt: <http://kdmg.dii.univpm.it/datasets/covid19italy/terms> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cov: <http://kdmg.dii.univpm.it/datasets/covid19italy/> .
+@prefix kpi: <http://w3id.org/kpionto/> . 
+@prefix om:  <http://www.openmath.org/cd/arith1/> .
+
 
 #Definition of measures
 
@@ -107,10 +112,10 @@ covt:Note a rdfs:Class;
 covt:PartialDataNote rdfs:subClassOf covt:Note;
 	rdfs:comment "A note declaring that data is partial."^^xsd:string.
 
-covt:NoDataNote rdfs:subClassOf covt:Note.
+covt:NoDataNote rdfs:subClassOf covt:Note;
 	rdfs:comment "A note declaring that data is not available."^^xsd:string.
 
-covt:DataCorrectionNote rdfs:subClassOf covt:Note.
+covt:DataCorrectionNote rdfs:subClassOf covt:Note;
 	rdfs:comment "A note declaring a data correction."^^xsd:string.
 
 covt:noticeDescription rdfs:subPropertyOf rdf:Property;
