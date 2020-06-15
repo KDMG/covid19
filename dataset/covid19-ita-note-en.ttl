@@ -292,9 +292,22 @@ cov:dc-0048 a covt:DataCorrectionNote ;
     covt:refTime "2020-06-13T17:00:00"^^xsd:dateTime .
 
 cov:dc-0049 a covt:DataCorrectionNote ;
-    covt:noticeDescription "recalculation of deaths (+25 compared to yesterday +2 deaths in the last 48 hours and +23 attributable to March and April)"^^xsd:string ;
+    covt:noticeDescription "recalculation of information"^^xsd:string ;
+    covt:otherInformation "recalculation of deaths (+25 compared to yesterday +2 deaths in the last 48 hours and +23 attributable to March and April)"^^xsd:string ;
     covt:refArea dbr:Lazio ;
     covt:refTime "2020-06-13T17:00:00"^^xsd:dateTime .
+
+cov:dc-0050 a covt:DataCorrectionNote ;
+    covt:noticeDescription "recalculation of information"^^xsd:string ;
+    covt:otherInformation "recalculation o positive cases (-2)"^^xsd:string ;
+    covt:refArea dbr:South_Tyrol ;
+    covt:refTime "2020-06-15T17:00:00"^^xsd:dateTime .
+
+cov:dc-0051 a covt:DataCorrectionNote ;
+    covt:noticeDescription "recalculation of information"^^xsd:string ;
+    covt:otherInformation "recalculation o positive cases (-2)"^^xsd:string ;
+    covt:refArea dbr:South_Tyrol ;
+    covt:refTime "2020-06-15T17:00:00"^^xsd:dateTime .
 
 cov:nd-0005 a covt:PartialDataNote ;
     covt:noticeDescription "partial communication of data"^^xsd:string ;
