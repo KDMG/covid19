@@ -313,6 +313,24 @@ cov:obsNat113 a qb:Observation ;
     sdmx-dimension:refArea covt:Italia ;
     sdmx-dimension:refPeriod covt:2020-06-16 .
 
+cov:obsNat114 a qb:Observation ;
+    covt:New_Cases 329 ;
+    covt:Total_Cases 237828 ;
+    covt:Total_Cases_Tested 2925803 ;
+    covt:Total_Deaths 34448 ;
+    covt:Total_Home_Confinement 20649 ;
+    covt:Total_Hospitalised_Patients_With_Symptoms 3113 ;
+    covt:Total_Hospitalized_Patients 3276 ;
+    covt:Total_Intensive_Care 163 ;
+    covt:Total_Positive_Cases 23925 ;
+    covt:Total_Recovered 179455 ;
+    covt:Total_Tests_Performed 4773408 ;
+    covt:Variation_Total_Positive_Cases -644 ;
+    covt:note cov:dc-0052 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Italia ;
+    sdmx-dimension:refPeriod covt:2020-06-17 .
+
 cov:obsNat12 a qb:Observation ;
     covt:New_Cases 1247 ;
     covt:Total_Cases 5883 ;

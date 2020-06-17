@@ -299,15 +299,27 @@ cov:dc-0049 a covt:DataCorrectionNote ;
 
 cov:dc-0050 a covt:DataCorrectionNote ;
     covt:noticeDescription "recalculation of information"^^xsd:string ;
-    covt:otherInformation "recalculation o positive cases (-2)"^^xsd:string ;
+    covt:otherInformation "recalculation of positive cases (-2)"^^xsd:string ;
     covt:refArea dbr:South_Tyrol ;
     covt:refTime "2020-06-15T17:00:00"^^xsd:dateTime .
 
 cov:dc-0051 a covt:DataCorrectionNote ;
     covt:noticeDescription "recalculation of information"^^xsd:string ;
-    covt:otherInformation "recalculation o positive cases (-2)"^^xsd:string ;
+    covt:otherInformation "recalculation of positive cases (-2)"^^xsd:string ;
     covt:refArea dbr:South_Tyrol ;
     covt:refTime "2020-06-15T17:00:00"^^xsd:dateTime .
+
+cov:dc-0052 a covt:DataCorrectionNote ;
+    covt:noticeDescription "recalculation of information"^^xsd:string ;
+    covt:otherInformation "recalculation of positive cases (-1 referred to 14/06/2020)"^^xsd:string ;
+    covt:refArea dbr:Abruzzo ;
+    covt:refTime "2020-06-17T17:00:00"^^xsd:dateTime .
+
+cov:dc-0053 a covt:DataCorrectionNote ;
+    covt:noticeDescription "recalculation of information"^^xsd:string ;
+    covt:otherInformation "recalculation of positive cases (-1 referred to 14/06/2020)"^^xsd:string ;
+    covt:refArea dbr:Abruzzo ;
+    covt:refTime "2020-06-17T17:00:00"^^xsd:dateTime .
 
 cov:nd-0005 a covt:PartialDataNote ;
     covt:noticeDescription "partial communication of data"^^xsd:string ;
