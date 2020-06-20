@@ -357,6 +357,30 @@ cov:dc-0059 a covt:DataCorrectionNote ;
     covt:refArea dbr:Sicily ;
     covt:refTime "2020-06-19T17:00:00"^^xsd:dateTime .
 
+cov:dc-0060 a covt:DataCorrectionNote ;
+    covt:noticeDescription "recalculation of information"^^xsd:string ;
+    covt:otherInformation "recalculation of positive cases (+3 already recovered)"^^xsd:string ;
+    covt:refArea dbr:South_Tyrol ;
+    covt:refTime "2020-06-19T17:00:00"^^xsd:dateTime .
+
+cov:dc-0061 a covt:DataCorrectionNote ;
+    covt:noticeDescription "recalculation of information"^^xsd:string ;
+    covt:otherInformation "recalculation of positive cases (+3 already recovered)"^^xsd:string ;
+    covt:refArea dbr:South_Tyrol ;
+    covt:refTime "2020-06-19T17:00:00"^^xsd:dateTime .
+
+cov:dc-0062 a covt:DataCorrectionNote ;
+    covt:noticeDescription "recalculation of information"^^xsd:string ;
+    covt:otherInformation "recalculation of positive cases (-1 referred to 18/06/2020)"^^xsd:string ;
+    covt:refArea dbr:Calabria ;
+    covt:refTime "2020-06-19T17:00:00"^^xsd:dateTime .
+
+cov:dc-0063 a covt:DataCorrectionNote ;
+    covt:noticeDescription "recalculation of information"^^xsd:string ;
+    covt:otherInformation "recalculation of positive cases (-1 referred to 18/06/2020)"^^xsd:string ;
+    covt:refArea dbr:Calabria ;
+    covt:refTime "2020-06-19T17:00:00"^^xsd:dateTime .
+
 cov:nd-0005 a covt:PartialDataNote ;
     covt:noticeDescription "partial communication of data"^^xsd:string ;
     covt:refArea dbr:Lombardy ;
