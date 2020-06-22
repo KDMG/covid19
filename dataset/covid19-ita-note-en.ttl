@@ -381,6 +381,18 @@ cov:dc-0063 a covt:DataCorrectionNote ;
     covt:refArea dbr:Calabria ;
     covt:refTime "2020-06-19T17:00:00"^^xsd:dateTime .
 
+cov:dc-0064 a covt:DataCorrectionNote ;
+    covt:noticeDescription "recalculation of information"^^xsd:string ;
+    covt:otherInformation "recalculation of positive cases (+3)"^^xsd:string ;
+    covt:refArea dbr:Marche ;
+    covt:refTime "2020-06-22T17:00:00"^^xsd:dateTime .
+
+cov:dc-0065 a covt:DataCorrectionNote ;
+    covt:noticeDescription "recalculation of information"^^xsd:string ;
+    covt:otherInformation "recalculation of positive cases (+3)"^^xsd:string ;
+    covt:refArea dbr:Marche ;
+    covt:refTime "2020-06-22T17:00:00"^^xsd:dateTime .
+
 cov:nd-0005 a covt:PartialDataNote ;
     covt:noticeDescription "partial communication of data"^^xsd:string ;
     covt:refArea dbr:Lombardy ;
