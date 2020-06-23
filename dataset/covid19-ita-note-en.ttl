@@ -393,6 +393,30 @@ cov:dc-0065 a covt:DataCorrectionNote ;
     covt:refArea dbr:Marche ;
     covt:refTime "2020-06-22T17:00:00"^^xsd:dateTime .
 
+cov:dc-0066 a covt:DataCorrectionNote ;
+    covt:noticeDescription "recalculation of information"^^xsd:string ;
+    covt:otherInformation "recalculation of positive cases (-9)"^^xsd:string ;
+    covt:refArea dbr:Sardinia ;
+    covt:refTime "2020-06-23T17:00:00"^^xsd:dateTime .
+
+cov:dc-0067 a covt:DataCorrectionNote ;
+    covt:noticeDescription "recalculation of information"^^xsd:string ;
+    covt:otherInformation "recalculation of positive cases (-9)"^^xsd:string ;
+    covt:refArea dbr:Sardinia ;
+    covt:refTime "2020-06-23T17:00:00"^^xsd:dateTime .
+
+cov:dc-0068 a covt:DataCorrectionNote ;
+    covt:noticeDescription "recalculation of information"^^xsd:string ;
+    covt:otherInformation "recalculation of tests"^^xsd:string ;
+    covt:refArea dbr:Aosta_Valley ;
+    covt:refTime "2020-06-23T17:00:00"^^xsd:dateTime .
+
+cov:dc-0069 a covt:DataCorrectionNote ;
+    covt:noticeDescription "recalculation of information"^^xsd:string ;
+    covt:otherInformation "recalculation of tests"^^xsd:string ;
+    covt:refArea dbr:Aosta_Valley ;
+    covt:refTime "2020-06-23T17:00:00"^^xsd:dateTime .
+
 cov:nd-0005 a covt:PartialDataNote ;
     covt:noticeDescription "partial communication of data"^^xsd:string ;
     covt:refArea dbr:Lombardy ;
