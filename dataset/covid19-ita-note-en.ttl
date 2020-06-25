@@ -417,6 +417,18 @@ cov:dc-0069 a covt:DataCorrectionNote ;
     covt:refArea dbr:Aosta_Valley ;
     covt:refTime "2020-06-23T17:00:00"^^xsd:dateTime .
 
+cov:dc-0070 a covt:DataCorrectionNote ;
+    covt:noticeDescription "recalculation of information"^^xsd:string ;
+    covt:otherInformation "recalculation of deceased and recovered"^^xsd:string ;
+    covt:refArea dbr:Trentino ;
+    covt:refTime "2020-06-23T17:00:00"^^xsd:dateTime .
+
+cov:dc-0071 a covt:DataCorrectionNote ;
+    covt:noticeDescription "recalculation of information"^^xsd:string ;
+    covt:otherInformation "recalculation of deceased and recovered"^^xsd:string ;
+    covt:refArea dbr:Trentino ;
+    covt:refTime "2020-06-23T17:00:00"^^xsd:dateTime .
+
 cov:nd-0005 a covt:PartialDataNote ;
     covt:noticeDescription "partial communication of data"^^xsd:string ;
     covt:refArea dbr:Lombardy ;
