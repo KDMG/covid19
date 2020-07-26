@@ -48607,8 +48607,17 @@ cov:obsProv17277 a qb:Observation ;
     sdmx-dimension:refPeriod covt:2020-07-25 .
 
 cov:obsProv17278 a qb:Observation ;
+    covt:Total_Cases 249 ;
     qb:dataSet cov:covid19Italy ;
-    sdmx-dimension:refPeriod covt:2020-07-25 .
+    sdmx-dimension:refArea covt:L_Aquila ;
+    sdmx-dimension:refPeriod covt:2020-07-25,
+        covt:2020-07-26 .
+
+cov:obsProv17279 a qb:Observation ;
+    covt:Total_Cases 635 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Teramo ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
 
 cov:obsProv1728 a qb:Observation ;
     covt:Total_Cases 17 ;
@@ -48616,11 +48625,131 @@ cov:obsProv1728 a qb:Observation ;
     sdmx-dimension:refArea covt:Salerno ;
     sdmx-dimension:refPeriod covt:2020-03-11 .
 
+cov:obsProv17280 a qb:Observation ;
+    covt:Total_Cases 1612 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Pescara ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17281 a qb:Observation ;
+    covt:Total_Cases 836 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Chieti ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17282 a qb:Observation ;
+    covt:Total_Cases 27 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea <http://kdmg.dii.univpm.it/datasets/covid19italy/terms/Fuori_Regione_/_Provincia_Autonoma> ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17283 a qb:Observation ;
+    covt:Total_Cases 192 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Potenza ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17284 a qb:Observation ;
+    covt:Total_Cases 213 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Matera ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17285 a qb:Observation ;
+    covt:Total_Cases 43 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea <http://kdmg.dii.univpm.it/datasets/covid19italy/terms/Fuori_Regione_/_Provincia_Autonoma> ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17286 a qb:Observation ;
+    covt:Total_Cases 488 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Cosenza ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17287 a qb:Observation ;
+    covt:Total_Cases 217 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Catanzaro ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17288 a qb:Observation ;
+    covt:Total_Cases 298 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Reggio_di_Calabria ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17289 a qb:Observation ;
+    covt:Total_Cases 121 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Crotone ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
 cov:obsProv1729 a qb:Observation ;
     covt:Total_Cases 108 ;
     qb:dataSet cov:covid19Italy ;
     sdmx-dimension:refArea covt:Bologna ;
     sdmx-dimension:refPeriod covt:2020-03-11 .
+
+cov:obsProv17290 a qb:Observation ;
+    covt:Total_Cases 88 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Vibo_Valentia ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17291 a qb:Observation ;
+    covt:Total_Cases 35 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea <http://kdmg.dii.univpm.it/datasets/covid19italy/terms/Fuori_Regione_/_Provincia_Autonoma> ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17292 a qb:Observation ;
+    covt:Total_Cases 605 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Caserta ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17293 a qb:Observation ;
+    covt:Total_Cases 209 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Benevento ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17294 a qb:Observation ;
+    covt:Total_Cases 2716 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Napoli ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17295 a qb:Observation ;
+    covt:Total_Cases 578 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Avellino ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17296 a qb:Observation ;
+    covt:Total_Cases 761 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Salerno ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17297 a qb:Observation ;
+    covt:Total_Cases 0 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea <http://kdmg.dii.univpm.it/datasets/covid19italy/terms/Fuori_Regione_/_Provincia_Autonoma> ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17298 a qb:Observation ;
+    covt:Total_Cases 4475 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Piacenza ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17299 a qb:Observation ;
+    covt:Total_Cases 3747 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Parma ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
 
 cov:obsProv173 a qb:Observation ;
     covt:Total_Cases 0 ;
@@ -48634,11 +48763,131 @@ cov:obsProv1730 a qb:Observation ;
     sdmx-dimension:refArea covt:Ferrara ;
     sdmx-dimension:refPeriod covt:2020-03-11 .
 
+cov:obsProv17300 a qb:Observation ;
+    covt:Total_Cases 5002 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Reggio_nell_Emilia ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17301 a qb:Observation ;
+    covt:Total_Cases 4032 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Modena ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17302 a qb:Observation ;
+    covt:Total_Cases 5552 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Bologna ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17303 a qb:Observation ;
+    covt:Total_Cases 1115 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Ferrara ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17304 a qb:Observation ;
+    covt:Total_Cases 1138 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Ravenna ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17305 a qb:Observation ;
+    covt:Total_Cases 1792 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Forlì-Cesena ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17306 a qb:Observation ;
+    covt:Total_Cases 2222 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Rimini ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17307 a qb:Observation ;
+    covt:Total_Cases 427 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea <http://kdmg.dii.univpm.it/datasets/covid19italy/terms/Fuori_Regione_/_Provincia_Autonoma> ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17308 a qb:Observation ;
+    covt:Total_Cases 1016 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Udine ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17309 a qb:Observation ;
+    covt:Total_Cases 225 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Gorizia ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
 cov:obsProv1731 a qb:Observation ;
     covt:Total_Cases 24 ;
     qb:dataSet cov:covid19Italy ;
     sdmx-dimension:refArea covt:Forlì-Cesena ;
     sdmx-dimension:refPeriod covt:2020-03-11 .
+
+cov:obsProv17310 a qb:Observation ;
+    covt:Total_Cases 1412 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Trieste ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17311 a qb:Observation ;
+    covt:Total_Cases 722 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Pordenone ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17312 a qb:Observation ;
+    covt:Total_Cases 0 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea <http://kdmg.dii.univpm.it/datasets/covid19italy/terms/Fuori_Regione_/_Provincia_Autonoma> ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17313 a qb:Observation ;
+    covt:Total_Cases 463 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Viterbo ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17314 a qb:Observation ;
+    covt:Total_Cases 414 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Rieti ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17315 a qb:Observation ;
+    covt:Total_Cases 6250 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Roma ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17316 a qb:Observation ;
+    covt:Total_Cases 646 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Latina ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17317 a qb:Observation ;
+    covt:Total_Cases 674 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Frosinone ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17318 a qb:Observation ;
+    covt:Total_Cases 80 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea <http://kdmg.dii.univpm.it/datasets/covid19italy/terms/Fuori_Regione_/_Provincia_Autonoma> ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17319 a qb:Observation ;
+    covt:Total_Cases 1525 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Imperia ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
 
 cov:obsProv1732 a qb:Observation ;
     covt:Total_Cases 163 ;
@@ -48646,11 +48895,131 @@ cov:obsProv1732 a qb:Observation ;
     sdmx-dimension:refArea covt:Modena ;
     sdmx-dimension:refPeriod covt:2020-03-11 .
 
+cov:obsProv17320 a qb:Observation ;
+    covt:Total_Cases 1627 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Savona ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17321 a qb:Observation ;
+    covt:Total_Cases 5639 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Genova ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17322 a qb:Observation ;
+    covt:Total_Cases 870 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:La_Spezia ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17323 a qb:Observation ;
+    covt:Total_Cases 254 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea <http://kdmg.dii.univpm.it/datasets/covid19italy/terms/Fuori_Regione_/_Provincia_Autonoma> ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17324 a qb:Observation ;
+    covt:Total_Cases 3986 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Varese ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17325 a qb:Observation ;
+    covt:Total_Cases 4151 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Como ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17326 a qb:Observation ;
+    covt:Total_Cases 1605 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Sondrio ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17327 a qb:Observation ;
+    covt:Total_Cases 24821 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Milano ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17328 a qb:Observation ;
+    covt:Total_Cases 14951 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Bergamo ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17329 a qb:Observation ;
+    covt:Total_Cases 15897 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Brescia ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
 cov:obsProv1733 a qb:Observation ;
     covt:Total_Cases 378 ;
     qb:dataSet cov:covid19Italy ;
     sdmx-dimension:refArea covt:Parma ;
     sdmx-dimension:refPeriod covt:2020-03-11 .
+
+cov:obsProv17330 a qb:Observation ;
+    covt:Total_Cases 5610 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Pavia ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17331 a qb:Observation ;
+    covt:Total_Cases 6720 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Cremona ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17332 a qb:Observation ;
+    covt:Total_Cases 3673 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Mantova ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17333 a qb:Observation ;
+    covt:Total_Cases 2874 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Lecco ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17334 a qb:Observation ;
+    covt:Total_Cases 3627 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Lodi ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17335 a qb:Observation ;
+    covt:Total_Cases 5867 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Monza_e_della_Brianza ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17336 a qb:Observation ;
+    covt:Total_Cases 654 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea <http://kdmg.dii.univpm.it/datasets/covid19italy/terms/Fuori_Regione_/_Provincia_Autonoma> ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17337 a qb:Observation ;
+    covt:Total_Cases 2777 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Pesaro_e_Urbino ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17338 a qb:Observation ;
+    covt:Total_Cases 1883 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Ancona ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17339 a qb:Observation ;
+    covt:Total_Cases 1158 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Macerata ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
 
 cov:obsProv1734 a qb:Observation ;
     covt:Total_Cases 664 ;
@@ -48658,11 +49027,131 @@ cov:obsProv1734 a qb:Observation ;
     sdmx-dimension:refArea covt:Piacenza ;
     sdmx-dimension:refPeriod covt:2020-03-11 .
 
+cov:obsProv17340 a qb:Observation ;
+    covt:Total_Cases 294 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Ascoli_Piceno ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17341 a qb:Observation ;
+    covt:Total_Cases 475 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Fermo ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17342 a qb:Observation ;
+    covt:Total_Cases 238 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea <http://kdmg.dii.univpm.it/datasets/covid19italy/terms/Fuori_Regione_/_Provincia_Autonoma> ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17343 a qb:Observation ;
+    covt:Total_Cases 381 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Campobasso ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17344 a qb:Observation ;
+    covt:Total_Cases 65 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Isernia ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17345 a qb:Observation ;
+    covt:Total_Cases 20 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea <http://kdmg.dii.univpm.it/datasets/covid19italy/terms/Fuori_Regione_/_Provincia_Autonoma> ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17346 a qb:Observation ;
+    covt:Total_Cases 2698 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Bolzano ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17347 a qb:Observation ;
+    covt:Total_Cases 0 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea <http://kdmg.dii.univpm.it/datasets/covid19italy/terms/Fuori_Regione_/_Provincia_Autonoma> ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17348 a qb:Observation ;
+    covt:Total_Cases 4965 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Trento ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17349 a qb:Observation ;
+    covt:Total_Cases 0 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea <http://kdmg.dii.univpm.it/datasets/covid19italy/terms/Fuori_Regione_/_Provincia_Autonoma> ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
 cov:obsProv1735 a qb:Observation ;
     covt:Total_Cases 31 ;
     qb:dataSet cov:covid19Italy ;
     sdmx-dimension:refArea covt:Ravenna ;
     sdmx-dimension:refPeriod covt:2020-03-11 .
+
+cov:obsProv17350 a qb:Observation ;
+    covt:Total_Cases 15969 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Torino ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17351 a qb:Observation ;
+    covt:Total_Cases 1351 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Vercelli ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17352 a qb:Observation ;
+    covt:Total_Cases 2808 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Novara ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17353 a qb:Observation ;
+    covt:Total_Cases 2921 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Cuneo ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17354 a qb:Observation ;
+    covt:Total_Cases 1883 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Asti ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17355 a qb:Observation ;
+    covt:Total_Cases 4096 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Alessandria ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17356 a qb:Observation ;
+    covt:Total_Cases 1054 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Biella ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17357 a qb:Observation ;
+    covt:Total_Cases 1151 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Verbano-Cusio-Ossola ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17358 a qb:Observation ;
+    covt:Total_Cases 268 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea <http://kdmg.dii.univpm.it/datasets/covid19italy/terms/Fuori_Regione_/_Provincia_Autonoma> ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17359 a qb:Observation ;
+    covt:Total_Cases 1180 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Foggia ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
 
 cov:obsProv1736 a qb:Observation ;
     covt:Total_Cases 114 ;
@@ -48670,11 +49159,131 @@ cov:obsProv1736 a qb:Observation ;
     sdmx-dimension:refArea covt:Reggio_nell_Emilia ;
     sdmx-dimension:refPeriod covt:2020-03-11 .
 
+cov:obsProv17360 a qb:Observation ;
+    covt:Total_Cases 1502 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Bari ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17361 a qb:Observation ;
+    covt:Total_Cases 281 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Taranto ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17362 a qb:Observation ;
+    covt:Total_Cases 671 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Brindisi ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17363 a qb:Observation ;
+    covt:Total_Cases 543 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Lecce ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17364 a qb:Observation ;
+    covt:Total_Cases 382 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Barletta-Andria-Trani ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17365 a qb:Observation ;
+    covt:Total_Cases 30 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea <http://kdmg.dii.univpm.it/datasets/covid19italy/terms/Fuori_Regione_/_Provincia_Autonoma> ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17366 a qb:Observation ;
+    covt:Total_Cases 884 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Sassari ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17367 a qb:Observation ;
+    covt:Total_Cases 82 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Nuoro ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17368 a qb:Observation ;
+    covt:Total_Cases 259 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Cagliari ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17369 a qb:Observation ;
+    covt:Total_Cases 61 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Oristano ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
 cov:obsProv1737 a qb:Observation ;
     covt:Total_Cases 245 ;
     qb:dataSet cov:covid19Italy ;
     sdmx-dimension:refArea covt:Rimini ;
     sdmx-dimension:refPeriod covt:2020-03-11 .
+
+cov:obsProv17370 a qb:Observation ;
+    covt:Total_Cases 102 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Sud_Sardegna ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17371 a qb:Observation ;
+    covt:Total_Cases 0 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea <http://kdmg.dii.univpm.it/datasets/covid19italy/terms/Fuori_Regione_/_Provincia_Autonoma> ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17372 a qb:Observation ;
+    covt:Total_Cases 138 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Trapani ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17373 a qb:Observation ;
+    covt:Total_Cases 510 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Palermo ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17374 a qb:Observation ;
+    covt:Total_Cases 483 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Messina ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17375 a qb:Observation ;
+    covt:Total_Cases 138 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Agrigento ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17376 a qb:Observation ;
+    covt:Total_Cases 188 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Caltanissetta ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17377 a qb:Observation ;
+    covt:Total_Cases 439 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Enna ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17378 a qb:Observation ;
+    covt:Total_Cases 821 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Catania ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17379 a qb:Observation ;
+    covt:Total_Cases 120 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Ragusa ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
 
 cov:obsProv1738 a qb:Observation ;
     covt:Total_Cases 12 ;
@@ -48682,11 +49291,131 @@ cov:obsProv1738 a qb:Observation ;
     sdmx-dimension:refArea covt:Gorizia ;
     sdmx-dimension:refPeriod covt:2020-03-11 .
 
+cov:obsProv17380 a qb:Observation ;
+    covt:Total_Cases 331 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Siracusa ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17381 a qb:Observation ;
+    covt:Total_Cases 0 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea <http://kdmg.dii.univpm.it/datasets/covid19italy/terms/Fuori_Regione_/_Provincia_Autonoma> ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17382 a qb:Observation ;
+    covt:Total_Cases 1056 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Massa_Carrara ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17383 a qb:Observation ;
+    covt:Total_Cases 1377 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Lucca ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17384 a qb:Observation ;
+    covt:Total_Cases 755 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Pistoia ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17385 a qb:Observation ;
+    covt:Total_Cases 3259 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Firenze ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17386 a qb:Observation ;
+    covt:Total_Cases 484 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Livorno ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17387 a qb:Observation ;
+    covt:Total_Cases 946 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Pisa ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17388 a qb:Observation ;
+    covt:Total_Cases 691 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Arezzo ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17389 a qb:Observation ;
+    covt:Total_Cases 429 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Siena ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
 cov:obsProv1739 a qb:Observation ;
     covt:Total_Cases 13 ;
     qb:dataSet cov:covid19Italy ;
     sdmx-dimension:refArea covt:Pordenone ;
     sdmx-dimension:refPeriod covt:2020-03-11 .
+
+cov:obsProv17390 a qb:Observation ;
+    covt:Total_Cases 408 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Grosseto ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17391 a qb:Observation ;
+    covt:Total_Cases 554 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Prato ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17392 a qb:Observation ;
+    covt:Total_Cases 471 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea <http://kdmg.dii.univpm.it/datasets/covid19italy/terms/Fuori_Regione_/_Provincia_Autonoma> ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17393 a qb:Observation ;
+    covt:Total_Cases 1021 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Perugia ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17394 a qb:Observation ;
+    covt:Total_Cases 384 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Terni ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17395 a qb:Observation ;
+    covt:Total_Cases 60 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea <http://kdmg.dii.univpm.it/datasets/covid19italy/terms/Fuori_Regione_/_Provincia_Autonoma> ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17396 a qb:Observation ;
+    covt:Total_Cases 1196 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Aosta ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17397 a qb:Observation ;
+    covt:Total_Cases 0 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea <http://kdmg.dii.univpm.it/datasets/covid19italy/terms/Fuori_Regione_/_Provincia_Autonoma> ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17398 a qb:Observation ;
+    covt:Total_Cases 5192 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Verona ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17399 a qb:Observation ;
+    covt:Total_Cases 2890 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Vicenza ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
 
 cov:obsProv174 a qb:Observation ;
     covt:Total_Cases 0 ;
@@ -48699,6 +49428,46 @@ cov:obsProv1740 a qb:Observation ;
     qb:dataSet cov:covid19Italy ;
     sdmx-dimension:refArea covt:Trieste ;
     sdmx-dimension:refPeriod covt:2020-03-11 .
+
+cov:obsProv17400 a qb:Observation ;
+    covt:Total_Cases 1212 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Belluno ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17401 a qb:Observation ;
+    covt:Total_Cases 2749 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Treviso ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17402 a qb:Observation ;
+    covt:Total_Cases 2781 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Venezia ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17403 a qb:Observation ;
+    covt:Total_Cases 4197 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Padova ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17404 a qb:Observation ;
+    covt:Total_Cases 459 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Rovigo ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17405 a qb:Observation ;
+    covt:Total_Cases 303 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea <http://kdmg.dii.univpm.it/datasets/covid19italy/terms/Fuori_Regione_/_Provincia_Autonoma> ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
+
+cov:obsProv17406 a qb:Observation ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refPeriod covt:2020-07-26 .
 
 cov:obsProv1741 a qb:Observation ;
     covt:Total_Cases 44 ;
