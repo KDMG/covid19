@@ -1069,6 +1069,23 @@ cov:obsNat153 a qb:Observation ;
     sdmx-dimension:refArea covt:Italia ;
     sdmx-dimension:refPeriod covt:2020-07-26 .
 
+cov:obsNat154 a qb:Observation ;
+    covt:New_Cases 170 ;
+    covt:Total_Cases 246286 ;
+    covt:Total_Cases_Tested 3942369 ;
+    covt:Total_Deaths 35112 ;
+    covt:Total_Home_Confinement 11796 ;
+    covt:Total_Hospitalised_Patients_With_Symptoms 740 ;
+    covt:Total_Hospitalized_Patients 785 ;
+    covt:Total_Intensive_Care 45 ;
+    covt:Total_Positive_Cases 12581 ;
+    covt:Total_Recovered 198593 ;
+    covt:Total_Tests_Performed 6586123 ;
+    covt:Variation_Total_Positive_Cases 16 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Italia ;
+    sdmx-dimension:refPeriod covt:2020-07-27 .
+
 cov:obsNat16 a qb:Observation ;
     covt:New_Cases 2313 ;
     covt:Total_Cases 12462 ;
