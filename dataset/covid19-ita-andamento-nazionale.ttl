@@ -1459,6 +1459,23 @@ cov:obsNat174 a qb:Observation ;
     sdmx-dimension:refArea covt:Italia ;
     sdmx-dimension:refPeriod covt:2020-08-16 .
 
+cov:obsNat175 a qb:Observation ;
+    covt:New_Cases 320 ;
+    covt:Total_Cases 254235 ;
+    covt:Total_Cases_Tested 5500970 ;
+    covt:Total_Deaths 35400 ;
+    covt:Total_Home_Confinement 13999 ;
+    covt:Total_Hospitalised_Patients_With_Symptoms 810 ;
+    covt:Total_Hospitalized_Patients 868 ;
+    covt:Total_Intensive_Care 58 ;
+    covt:Total_Positive_Cases 14867 ;
+    covt:Total_Recovered 203968 ;
+    covt:Total_Tests_Performed 7588083 ;
+    covt:Variation_Total_Positive_Cases 134 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Italia ;
+    sdmx-dimension:refPeriod covt:2020-08-17 .
+
 cov:obsNat18 a qb:Observation ;
     covt:New_Cases 2547 ;
     covt:Total_Cases 17660 ;
