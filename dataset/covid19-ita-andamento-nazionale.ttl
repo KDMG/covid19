@@ -1965,6 +1965,23 @@ cov:obsNat200 a qb:Observation ;
     sdmx-dimension:refArea covt:Italia ;
     sdmx-dimension:refPeriod covt:2020-09-11 .
 
+cov:obsNat201 a qb:Observation ;
+    covt:New_Cases 1501 ;
+    covt:Total_Cases 286297 ;
+    covt:Total_Cases_Tested 5875462 ;
+    covt:Total_Deaths 35603 ;
+    covt:Total_Home_Confinement 35370 ;
+    covt:Total_Hospitalised_Patients_With_Symptoms 1951 ;
+    covt:Total_Hospitalized_Patients 2133 ;
+    covt:Total_Intensive_Care 182 ;
+    covt:Total_Positive_Cases 37503 ;
+    covt:Total_Recovered 213191 ;
+    covt:Total_Tests_Performed 9745975 ;
+    covt:Variation_Total_Positive_Cases 736 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Italia ;
+    sdmx-dimension:refPeriod covt:2020-09-12 .
+
 cov:obsNat21 a qb:Observation ;
     covt:New_Cases 3233 ;
     covt:Total_Cases 27980 ;
