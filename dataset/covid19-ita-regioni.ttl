@@ -72634,6 +72634,142 @@ cov:obsReg4871 a qb:Observation ;
     sdmx-dimension:refArea covt:Veneto ;
     sdmx-dimension:refPeriod covt:2020-10-12 .
 
+cov:obsReg4872 a qb:Observation ;
+    covt:New_Cases 146 ;
+    covt:Total_Cases 5320 ;
+    covt:Total_Cases_Tested 144769 ;
+    covt:Total_Deaths 488 ;
+    covt:Total_Home_Confinement 1518 ;
+    covt:Total_Hospitalised_Patients_With_Symptoms 146 ;
+    covt:Total_Hospitalized_Patients 161 ;
+    covt:Total_Intensive_Care 15 ;
+    covt:Total_Positive_Cases 1679 ;
+    covt:Total_Recovered 3153 ;
+    covt:Total_Tests_Performed 228524 ;
+    covt:Variation_Total_Positive_Cases 147 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Abruzzo ;
+    sdmx-dimension:refPeriod covt:2020-10-13 .
+
+cov:obsReg4873 a qb:Observation ;
+    covt:New_Cases 8 ;
+    covt:Total_Cases 1066 ;
+    covt:Total_Cases_Tested 82651 ;
+    covt:Total_Deaths 37 ;
+    covt:Total_Home_Confinement 463 ;
+    covt:Total_Hospitalised_Patients_With_Symptoms 34 ;
+    covt:Total_Hospitalized_Patients 34 ;
+    covt:Total_Intensive_Care 0 ;
+    covt:Total_Positive_Cases 497 ;
+    covt:Total_Recovered 532 ;
+    covt:Total_Tests_Performed 83481 ;
+    covt:Variation_Total_Positive_Cases 2 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Basilicata ;
+    sdmx-dimension:refPeriod covt:2020-10-13 .
+
+cov:obsReg4874 a qb:Observation ;
+    covt:New_Cases 44 ;
+    covt:Total_Cases 2388 ;
+    covt:Total_Cases_Tested 224137 ;
+    covt:Total_Deaths 104 ;
+    covt:Total_Home_Confinement 755 ;
+    covt:Total_Hospitalised_Patients_With_Symptoms 42 ;
+    covt:Total_Hospitalized_Patients 43 ;
+    covt:Total_Intensive_Care 1 ;
+    covt:Total_Positive_Cases 798 ;
+    covt:Total_Recovered 1486 ;
+    covt:Total_Tests_Performed 226243 ;
+    covt:Variation_Total_Positive_Cases 25 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Calabria ;
+    sdmx-dimension:refPeriod covt:2020-10-13 .
+
+cov:obsReg4875 a qb:Observation ;
+    covt:New_Cases 635 ;
+    covt:Total_Cases 19827 ;
+    covt:Total_Cases_Tested 467964 ;
+    covt:Total_Deaths 485 ;
+    covt:Total_Home_Confinement 11022 ;
+    covt:Total_Hospitalised_Patients_With_Symptoms 694 ;
+    covt:Total_Hospitalized_Patients 756 ;
+    covt:Total_Intensive_Care 62 ;
+    covt:Total_Positive_Cases 11778 ;
+    covt:Total_Recovered 7564 ;
+    covt:Total_Tests_Performed 697829 ;
+    covt:Variation_Total_Positive_Cases 552 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Campania ;
+    sdmx-dimension:refPeriod covt:2020-10-13 .
+
+cov:obsReg4876 a qb:Observation ;
+    covt:New_Cases 341 ;
+    covt:Total_Cases 38356 ;
+    covt:Total_Cases_Tested 728221 ;
+    covt:Total_Deaths 4498 ;
+    covt:Total_Home_Confinement 6522 ;
+    covt:Total_Hospitalised_Patients_With_Symptoms 323 ;
+    covt:Total_Hospitalized_Patients 354 ;
+    covt:Total_Intensive_Care 31 ;
+    covt:Total_Positive_Cases 6876 ;
+    covt:Total_Recovered 26982 ;
+    covt:Total_Tests_Performed 1310995 ;
+    covt:Variation_Total_Positive_Cases 203 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Emilia-Romagna ;
+    sdmx-dimension:refPeriod covt:2020-10-13 .
+
+cov:obsReg4877 a qb:Observation ;
+    covt:New_Cases 38 ;
+    covt:Total_Cases 5610 ;
+    covt:Total_Cases_Tested 200782 ;
+    covt:Total_Deaths 356 ;
+    covt:Total_Home_Confinement 1367 ;
+    covt:Total_Hospitalised_Patients_With_Symptoms 27 ;
+    covt:Total_Hospitalized_Patients 37 ;
+    covt:Total_Intensive_Care 10 ;
+    covt:Total_Positive_Cases 1404 ;
+    covt:Total_Recovered 3850 ;
+    covt:Total_Tests_Performed 454083 ;
+    covt:Variation_Total_Positive_Cases 32 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Friuli_Venezia_Giulia ;
+    sdmx-dimension:refPeriod covt:2020-10-13 .
+
+cov:obsReg4878 a qb:Observation ;
+    covt:New_Cases 579 ;
+    covt:Total_Cases 20864 ;
+    covt:Total_Cases_Tested 861669 ;
+    covt:Total_Deaths 989 ;
+    covt:Total_Home_Confinement 9658 ;
+    covt:Total_Hospitalised_Patients_With_Symptoms 896 ;
+    covt:Total_Hospitalized_Patients 979 ;
+    covt:Total_Intensive_Care 83 ;
+    covt:Total_Positive_Cases 10637 ;
+    covt:Total_Recovered 9238 ;
+    covt:Total_Tests_Performed 1044724 ;
+    covt:Variation_Total_Positive_Cases 515 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Lazio ;
+    sdmx-dimension:refPeriod covt:2020-10-13 .
+
+cov:obsReg4879 a qb:Observation ;
+    covt:New_Cases 447 ;
+    covt:Total_Cases 15902 ;
+    covt:Total_Cases_Tested 188093 ;
+    covt:Total_Deaths 1622 ;
+    covt:Total_Home_Confinement 2624 ;
+    covt:Total_Hospitalised_Patients_With_Symptoms 272 ;
+    covt:Total_Hospitalized_Patients 299 ;
+    covt:Total_Intensive_Care 27 ;
+    covt:Total_Positive_Cases 2923 ;
+    covt:Total_Recovered 11357 ;
+    covt:Total_Tests_Performed 353832 ;
+    covt:Variation_Total_Positive_Cases 182 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Liguria ;
+    sdmx-dimension:refPeriod covt:2020-10-13 .
+
 cov:obsReg488 a qb:Observation ;
     covt:New_Cases 594 ;
     covt:Total_Cases 4525 ;
@@ -72651,6 +72787,176 @@ cov:obsReg488 a qb:Observation ;
     sdmx-dimension:refArea covt:Emilia-Romagna ;
     sdmx-dimension:refPeriod covt:2020-03-18 .
 
+cov:obsReg4880 a qb:Observation ;
+    covt:New_Cases 1080 ;
+    covt:Total_Cases 114800 ;
+    covt:Total_Cases_Tested 1469625 ;
+    covt:Total_Deaths 16994 ;
+    covt:Total_Home_Confinement 13648 ;
+    covt:Total_Hospitalised_Patients_With_Symptoms 546 ;
+    covt:Total_Hospitalized_Patients 608 ;
+    covt:Total_Intensive_Care 62 ;
+    covt:Total_Positive_Cases 14256 ;
+    covt:Total_Recovered 83550 ;
+    covt:Total_Tests_Performed 2350108 ;
+    covt:Variation_Total_Positive_Cases 877 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Lombardia ;
+    sdmx-dimension:refPeriod covt:2020-10-13 .
+
+cov:obsReg4881 a qb:Observation ;
+    covt:New_Cases 82 ;
+    covt:Total_Cases 8712 ;
+    covt:Total_Cases_Tested 158948 ;
+    covt:Total_Deaths 992 ;
+    covt:Total_Home_Confinement 1329 ;
+    covt:Total_Hospitalised_Patients_With_Symptoms 60 ;
+    covt:Total_Hospitalized_Patients 66 ;
+    covt:Total_Intensive_Care 6 ;
+    covt:Total_Positive_Cases 1395 ;
+    covt:Total_Recovered 6325 ;
+    covt:Total_Tests_Performed 270757 ;
+    covt:Variation_Total_Positive_Cases 66 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Marche ;
+    sdmx-dimension:refPeriod covt:2020-10-13 .
+
+cov:obsReg4882 a qb:Observation ;
+    covt:New_Cases 49 ;
+    covt:Total_Cases 795 ;
+    covt:Total_Cases_Tested 47568 ;
+    covt:Total_Deaths 26 ;
+    covt:Total_Home_Confinement 200 ;
+    covt:Total_Hospitalised_Patients_With_Symptoms 10 ;
+    covt:Total_Hospitalized_Patients 10 ;
+    covt:Total_Intensive_Care 0 ;
+    covt:Total_Positive_Cases 210 ;
+    covt:Total_Recovered 559 ;
+    covt:Total_Tests_Performed 49398 ;
+    covt:Variation_Total_Positive_Cases 46 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Molise ;
+    sdmx-dimension:refPeriod covt:2020-10-13 .
+
+cov:obsReg4883 a qb:Observation ;
+    covt:New_Cases 34 ;
+    covt:Total_Cases 4143 ;
+    covt:Total_Cases_Tested 100855 ;
+    covt:Total_Deaths 293 ;
+    covt:Total_Home_Confinement 937 ;
+    covt:Total_Hospitalised_Patients_With_Symptoms 54 ;
+    covt:Total_Hospitalized_Patients 57 ;
+    covt:Total_Intensive_Care 3 ;
+    covt:Total_Positive_Cases 994 ;
+    covt:Total_Recovered 2856 ;
+    covt:Total_Tests_Performed 194574 ;
+    covt:Variation_Total_Positive_Cases 21 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:P.A._Bolzano ;
+    sdmx-dimension:refPeriod covt:2020-10-13 .
+
+cov:obsReg4884 a qb:Observation ;
+    covt:New_Cases 28 ;
+    covt:Total_Cases 6513 ;
+    covt:Total_Cases_Tested 105581 ;
+    covt:Total_Deaths 411 ;
+    covt:Total_Home_Confinement 665 ;
+    covt:Total_Hospitalised_Patients_With_Symptoms 20 ;
+    covt:Total_Hospitalized_Patients 20 ;
+    covt:Total_Intensive_Care 0 ;
+    covt:Total_Positive_Cases 685 ;
+    covt:Total_Recovered 5417 ;
+    covt:Total_Tests_Performed 251213 ;
+    covt:Variation_Total_Positive_Cases 5 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:P.A._Trento ;
+    sdmx-dimension:refPeriod covt:2020-10-13 .
+
+cov:obsReg4885 a qb:Observation ;
+    covt:New_Cases 585 ;
+    covt:Total_Cases 39542 ;
+    covt:Total_Cases_Tested 480303 ;
+    covt:Total_Deaths 4183 ;
+    covt:Total_Home_Confinement 5452 ;
+    covt:Total_Hospitalised_Patients_With_Symptoms 483 ;
+    covt:Total_Hospitalized_Patients 513 ;
+    covt:Total_Intensive_Care 30 ;
+    covt:Total_Positive_Cases 5965 ;
+    covt:Total_Recovered 29394 ;
+    covt:Total_Tests_Performed 808603 ;
+    covt:Variation_Total_Positive_Cases 502 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Piemonte ;
+    sdmx-dimension:refPeriod covt:2020-10-13 .
+
+cov:obsReg4886 a qb:Observation ;
+    covt:New_Cases 180 ;
+    covt:Total_Cases 9849 ;
+    covt:Total_Cases_Tested 327324 ;
+    covt:Total_Deaths 616 ;
+    covt:Total_Home_Confinement 3665 ;
+    covt:Total_Hospitalised_Patients_With_Symptoms 310 ;
+    covt:Total_Hospitalized_Patients 333 ;
+    covt:Total_Intensive_Care 23 ;
+    covt:Total_Positive_Cases 3998 ;
+    covt:Total_Recovered 5235 ;
+    covt:Total_Tests_Performed 461971 ;
+    covt:Variation_Total_Positive_Cases 85 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Puglia ;
+    sdmx-dimension:refPeriod covt:2020-10-13 .
+
+cov:obsReg4887 a qb:Observation ;
+    covt:New_Cases 157 ;
+    covt:Total_Cases 5295 ;
+    covt:Total_Cases_Tested 182625 ;
+    covt:Total_Deaths 168 ;
+    covt:Total_Home_Confinement 2710 ;
+    covt:Total_Hospitalised_Patients_With_Symptoms 164 ;
+    covt:Total_Hospitalized_Patients 190 ;
+    covt:Total_Intensive_Care 26 ;
+    covt:Total_Positive_Cases 2900 ;
+    covt:Total_Recovered 2227 ;
+    covt:Total_Tests_Performed 216503 ;
+    covt:Variation_Total_Positive_Cases 41 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Sardegna ;
+    sdmx-dimension:refPeriod covt:2020-10-13 .
+
+cov:obsReg4888 a qb:Observation ;
+    covt:New_Cases 334 ;
+    covt:Total_Cases 9926 ;
+    covt:Total_Cases_Tested 402751 ;
+    covt:Total_Deaths 341 ;
+    covt:Total_Home_Confinement 4407 ;
+    covt:Total_Hospitalised_Patients_With_Symptoms 426 ;
+    covt:Total_Hospitalized_Patients 470 ;
+    covt:Total_Intensive_Care 44 ;
+    covt:Total_Positive_Cases 4877 ;
+    covt:Total_Recovered 4708 ;
+    covt:Total_Tests_Performed 561166 ;
+    covt:Variation_Total_Positive_Cases 195 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Sicilia ;
+    sdmx-dimension:refPeriod covt:2020-10-13 .
+
+cov:obsReg4889 a qb:Observation ;
+    covt:New_Cases 480 ;
+    covt:Total_Cases 19106 ;
+    covt:Total_Cases_Tested 576101 ;
+    covt:Total_Deaths 1181 ;
+    covt:Total_Home_Confinement 6655 ;
+    covt:Total_Hospitalised_Patients_With_Symptoms 218 ;
+    covt:Total_Hospitalized_Patients 262 ;
+    covt:Total_Intensive_Care 44 ;
+    covt:Total_Positive_Cases 6917 ;
+    covt:Total_Recovered 11008 ;
+    covt:Total_Tests_Performed 856638 ;
+    covt:Variation_Total_Positive_Cases 413 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Toscana ;
+    sdmx-dimension:refPeriod covt:2020-10-13 .
+
 cov:obsReg489 a qb:Observation ;
     covt:New_Cases 68 ;
     covt:Total_Cases 462 ;
@@ -72666,6 +72972,57 @@ cov:obsReg489 a qb:Observation ;
     qb:dataSet cov:covid19Italy ;
     sdmx-dimension:refArea covt:Friuli_Venezia_Giulia ;
     sdmx-dimension:refPeriod covt:2020-03-18 .
+
+cov:obsReg4890 a qb:Observation ;
+    covt:New_Cases 136 ;
+    covt:Total_Cases 3608 ;
+    covt:Total_Cases_Tested 140125 ;
+    covt:Total_Deaths 90 ;
+    covt:Total_Home_Confinement 1412 ;
+    covt:Total_Hospitalised_Patients_With_Symptoms 68 ;
+    covt:Total_Hospitalized_Patients 79 ;
+    covt:Total_Intensive_Care 11 ;
+    covt:Total_Positive_Cases 1491 ;
+    covt:Total_Recovered 2027 ;
+    covt:Total_Tests_Performed 236287 ;
+    covt:Variation_Total_Positive_Cases 121 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Umbria ;
+    sdmx-dimension:refPeriod covt:2020-10-13 .
+
+cov:obsReg4891 a qb:Observation ;
+    covt:New_Cases 33 ;
+    covt:Total_Cases 1529 ;
+    covt:Total_Cases_Tested 21861 ;
+    covt:Total_Deaths 146 ;
+    covt:Total_Home_Confinement 244 ;
+    covt:Total_Hospitalised_Patients_With_Symptoms 11 ;
+    covt:Total_Hospitalized_Patients 14 ;
+    covt:Total_Intensive_Care 3 ;
+    covt:Total_Positive_Cases 258 ;
+    covt:Total_Recovered 1125 ;
+    covt:Total_Tests_Performed 31763 ;
+    covt:Variation_Total_Positive_Cases 33 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Valle_d_Aosta ;
+    sdmx-dimension:refPeriod covt:2020-10-13 .
+
+cov:obsReg4892 a qb:Observation ;
+    covt:New_Cases 485 ;
+    covt:Total_Cases 32316 ;
+    covt:Total_Cases_Tested 810366 ;
+    covt:Total_Deaths 2226 ;
+    covt:Total_Home_Confinement 6350 ;
+    covt:Total_Hospitalised_Patients_With_Symptoms 272 ;
+    covt:Total_Hospitalized_Patients 305 ;
+    covt:Total_Intensive_Care 33 ;
+    covt:Total_Positive_Cases 6655 ;
+    covt:Total_Recovered 23435 ;
+    covt:Total_Tests_Performed 2074007 ;
+    covt:Variation_Total_Positive_Cases 366 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Veneto ;
+    sdmx-dimension:refPeriod covt:2020-10-13 .
 
 cov:obsReg49 a qb:Observation ;
     covt:New_Cases 0 ;
