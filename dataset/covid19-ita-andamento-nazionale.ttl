@@ -2850,6 +2850,23 @@ cov:obsNat248 a qb:Observation ;
     sdmx-dimension:refArea covt:Italia ;
     sdmx-dimension:refPeriod covt:2020-10-29 .
 
+cov:obsNat249 a qb:Observation ;
+    covt:New_Cases 31084 ;
+    covt:Total_Cases 647674 ;
+    covt:Total_Cases_Tested 9446183 ;
+    covt:Total_Deaths 38321 ;
+    covt:Total_Home_Confinement 307046 ;
+    covt:Total_Hospitalised_Patients_With_Symptoms 16994 ;
+    covt:Total_Hospitalized_Patients 18740 ;
+    covt:Total_Intensive_Care 1746 ;
+    covt:Total_Positive_Cases 325786 ;
+    covt:Total_Recovered 283567 ;
+    covt:Total_Tests_Performed 15568575 ;
+    covt:Variation_Total_Positive_Cases 26595 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Italia ;
+    sdmx-dimension:refPeriod covt:2020-10-30 .
+
 cov:obsNat25 a qb:Observation ;
     covt:New_Cases 5986 ;
     covt:Total_Cases 47021 ;
