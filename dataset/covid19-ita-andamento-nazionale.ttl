@@ -2968,6 +2968,57 @@ cov:obsNat254 a qb:Observation ;
     sdmx-dimension:refArea covt:Italia ;
     sdmx-dimension:refPeriod covt:2020-11-04 .
 
+cov:obsNat255 a qb:Observation ;
+    covt:New_Cases 34505 ;
+    covt:Total_Cases 824879 ;
+    covt:Total_Cases_Tested 10155585 ;
+    covt:Total_Deaths 40192 ;
+    covt:Total_Home_Confinement 446701 ;
+    covt:Total_Hospitalised_Patients_With_Symptoms 23256 ;
+    covt:Total_Hospitalized_Patients 25647 ;
+    covt:Total_Intensive_Care 2391 ;
+    covt:Total_Positive_Cases 472348 ;
+    covt:Total_Recovered 312339 ;
+    covt:Total_Tests_Performed 16717651 ;
+    covt:Variation_Total_Positive_Cases 29113 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Italia ;
+    sdmx-dimension:refPeriod covt:2020-11-05 .
+
+cov:obsNat256 a qb:Observation ;
+    covt:New_Cases 30550 ;
+    covt:Total_Cases 790377 ;
+    covt:Total_Cases_Tested 10021035 ;
+    covt:Total_Deaths 39747 ;
+    covt:Total_Home_Confinement 418827 ;
+    covt:Total_Hospitalised_Patients_With_Symptoms 22116 ;
+    covt:Total_Hospitalized_Patients 24408 ;
+    covt:Total_Intensive_Care 2292 ;
+    covt:Total_Positive_Cases 443235 ;
+    covt:Total_Recovered 307378 ;
+    covt:Total_Tests_Performed 16497767 ;
+    covt:Variation_Total_Positive_Cases 25093 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Italia ;
+    sdmx-dimension:refPeriod covt:2020-11-04 .
+
+cov:obsNat257 a qb:Observation ;
+    covt:New_Cases 34505 ;
+    covt:Total_Cases 824879 ;
+    covt:Total_Cases_Tested 10155585 ;
+    covt:Total_Deaths 40192 ;
+    covt:Total_Home_Confinement 446701 ;
+    covt:Total_Hospitalised_Patients_With_Symptoms 23256 ;
+    covt:Total_Hospitalized_Patients 25647 ;
+    covt:Total_Intensive_Care 2391 ;
+    covt:Total_Positive_Cases 472348 ;
+    covt:Total_Recovered 312339 ;
+    covt:Total_Tests_Performed 16717651 ;
+    covt:Variation_Total_Positive_Cases 29113 ;
+    qb:dataSet cov:covid19Italy ;
+    sdmx-dimension:refArea covt:Italia ;
+    sdmx-dimension:refPeriod covt:2020-11-05 .
+
 cov:obsNat26 a qb:Observation ;
     covt:New_Cases 6557 ;
     covt:Total_Cases 53578 ;
