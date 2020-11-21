@@ -48,6 +48,11 @@ RDF serialization is provided in [Turtle syntax](https://www.w3.org/TR/turtle/).
 ### Licence
 The project is licenced under the [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/deed.it) [(show the licence)](LICENCE)
 
+
+### How to cite
+
+This dataset is published in Zenodo and can be cited through the following DOI: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4283357.svg)](https://doi.org/10.5281/zenodo.4283357)
+
  
 ### Contacts
 For information or requests, please contact Emanuele Storti - <e.storti@univpm.it>
